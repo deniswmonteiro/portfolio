@@ -1,0 +1,21 @@
+/** VARIABLES */
+* {
+    /** Font */
+    --font: "Fira Sans", Helvetica, Arial, sans-serif;
+	
+    /** Colors */
+    --gray-1: #FAFAFA;
+	--gray-3: #E0E0E0;
+	--gray-4: #CCC;
+	--gray-8: #7A7A7A;
+	--gray-10: #525252;
+	--gray-11: #3D3D3D;
+	--gray-12: #292929;
+	--gray-13: #141414;
+	--blue-1: #BEBEFF;
+	--blue-6: #5C5CCC;
+	--blue-11: #2E2E66;
+    --green: #5d7;
+	--dark-blue: #1A237E;
+    --gradient: linear-gradient(to right bottom, var(--blue-11), var(--blue-6));
+}

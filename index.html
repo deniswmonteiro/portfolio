@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Matos &bull; Full-stack Developer e UI/UX Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="dm-wrapper">
+        <header id="dm-header">
+            <nav class="container navbar navbar-expand-lg navbar-light pt-3 pb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/">
+                        <img src="/img/logo-header.svg" alt="Logo do cabeçalho">
+                    </a>
+                    
+                    <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="collapse"
+                        data-bs-target="#dm-header-menu" 
+                        aria-controls="dm-header-menu" 
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end"
+                        id="dm-header-menu">
+                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0 align-items-end">
+                            <li class="nav-item me-2">
+                                <a class="nav-link ps-2 pe-2 active" href="#dm-about"
+                                    aria-current="page">
+                                    Sobre
+                                </a>
+                            </li>
+                            <li class="nav-item ms-2 me-2">
+                                <a class="nav-link ps-2 pe-2" href="#dm-education">
+                                    Formação
+                                </a>
+                            </li>
+                            <li class="nav-item ms-2 me-2">
+                                <a class="nav-link ps-2 pe-2" href="#dm-portfolio">
+                                    Portfólio
+                                </a>
+                            </li>
+                            <li class="nav-item ms-2 me-2">
+                                <a class="nav-link ps-2 pe-2" href="#dm-services">
+                                    Serviços
+                                </a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link ps-2 pe-2" href="#dm-contact">
+                                    Contato
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="container position-relative" id="dm-wrapper-intro">
+            <div class="row dm-intro">
+                <div class="col-12 text-center">
+                    <h1 class="mb-3 dm-title">
+                        Olá, meu nome é Denis Matos.
+                    </h1>
+                    <p class="mb-5 dm-subtitle">
+                        Full-stack Developer &bull; UI/UX Designer
+                    </p>
+                    <button class="btn btn-lg text-uppercase dm-btn-outline-blue">
+                        Saiba Mais
+                        <i class="bi bi-chevron-down ms-2"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img src="./img/ilustração.svg" alt="Ilustração da introdução"
+                        class="position-absolute dm-illustration">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>

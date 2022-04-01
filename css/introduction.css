@@ -1,0 +1,24 @@
+#dm-wrapper-intro {
+    padding-bottom: 265px;
+}
+
+.dm-intro {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.dm-title {
+    font-size: 48px;
+    line-height: 1.1;
+    color: var(--gray-1);
+}
+
+.dm-subtitle {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--gray-3);
+}
+
+.dm-illustration {
+    right: 0;
+}

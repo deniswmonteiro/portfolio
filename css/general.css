@@ -1,0 +1,15 @@
+#dm-wrapper {
+    background: url("../img/bg-intro.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.dm-btn-outline-blue {
+    color: var(--blue-1);
+    border-color: var(--blue-1);
+    transition: .3s;
+}
+
+.dm-btn-outline-blue:hover {
+    color: var(--gray-13);
+    background-color: var(--blue-1);
+}

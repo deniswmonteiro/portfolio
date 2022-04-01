@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio - Denis Matos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deniswmonteiro/portfolio.git"
+  },
+  "author": "Denis Matos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deniswmonteiro/portfolio/issues"
+  },
+  "homepage": "https://github.com/deniswmonteiro/portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.1"
+  }
+}
