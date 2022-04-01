@@ -1,0 +1,48 @@
+#dm-about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+#dm-about .dm-title-2 {
+    color: var(--gray-3);
+}
+
+.dm-about-card {
+    min-height: 25.813rem;
+    margin-top: 30px;
+    background-color: var(--gray-1);
+    border-color: var(--gray-2);
+}
+
+#dm-about .dm-card-title {
+    color: var(--gray-10);
+}
+
+.dm-nav-link {
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--gray-13);
+}
+
+.dm-nav-link:hover {
+    color: var(--blue-6);
+}
+
+.dm-nav-link.active {
+    background-color: var(--blue-6) !important;
+    color: var(--gray-1) !important;
+}
+
+.dm-skill-content p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.dm-skill-content .dm-progress {
+    background-color: var(--gray-3) !important;
+}
+
+.dm-skill-content .dm-progress-bar {
+    width: 0%;
+    background-color: var(--blue-1) !important;
+}
