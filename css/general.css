@@ -44,9 +44,9 @@
 .dm-card-title-icon i {
     display: inline-block;
     position: absolute;
-    left: -6px;
+    left: -12px;
     color: var(--blue-6);
-    height: 20px;
+    font-size: 22px;
 }
 
 .dm-btn-outline-blue {

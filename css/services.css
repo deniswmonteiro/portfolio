@@ -1,0 +1,37 @@
+#dm-services {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: var(--gray-1);
+}
+
+#dm-services .dm-title-2 {
+    color: var(--gray-4);
+}
+
+.dm-services-card {
+    min-height: 222px;
+    margin-top: 20px;
+    background-color: var(--gray-2);
+    border-color: var(--gray-3);
+}
+
+.dm-card-lg {
+    min-height: 250px;
+}
+
+#dm-services .dm-card-title-icon {
+    color: var(--gray-10);
+}
+
+.dm-services-card p {
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--gray-13);
+}
+
+.dm-services-tech span {
+    font-size: 16px;
+    line-height: 1.4;
+    background: var(--blue-1);
+    color: var(--gray-13);
+}
