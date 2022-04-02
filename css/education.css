@@ -1,0 +1,45 @@
+#dm-education {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: var(--gray-13);
+}
+
+#dm-education .dm-title-2 {
+    color: var(--gray-10);
+}
+
+.dm-education-card {
+    margin-top: 20px;
+    background-color: var(--gray-11);
+    border-color: var(--gray-12);
+}
+
+.dm-card-transparent {
+    background-color: transparent;
+    border: none;
+}
+
+#dm-education .dm-card-title {
+    color: var(--gray-8);
+}
+
+#dm-education .dm-card-title-icon {
+    color: var(--gray-8);
+}
+
+#dm-education p {
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--gray-1);
+}
+
+#dm-education span {
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--gray-4);
+}
+
+.dm-list-courses {
+    font-size: 20px;
+    color: var(--gray-1);
+}
