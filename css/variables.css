@@ -15,6 +15,7 @@
 	--blue-1: #BEBEFF;
 	--blue-6: #5C5CCC;
 	--blue-11: #2E2E66;
+    --orange: #FF8C00;
     --green: #5d7;
 	--dark-blue: #1A237E;
     --gradient: linear-gradient(to right bottom, var(--blue-11), var(--blue-6));

@@ -52,10 +52,11 @@
 .dm-btn-outline-blue {
     color: var(--blue-1);
     border-color: var(--blue-1);
-    transition: .3s;
+    transition: .3s ease-in-out;
 }
 
 .dm-btn-outline-blue:hover {
     color: var(--gray-13);
     background-color: var(--blue-1);
+    transition: .3s ease-in-out;
 }

@@ -1,0 +1,37 @@
+#dm-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.dm-portfolio-content {
+    top: -80px;
+}
+
+.dm-card-sunnyhouse, .dm-card-sair, .dm-card-sisgee {
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--gray-1);
+    transition: .3s ease-in-out;
+    min-height: 240px;
+}
+
+.dm-portfolio-info p {
+    min-height: 112px;
+}
+
+.dm-card-sunnyhouse {
+    background: var(--orange)
+}
+
+.dm-card-sair {
+    background: var(--green);
+}
+
+.dm-card-sisgee {
+    background: var(--dark-blue);
+}
+
+.dm-card-sunnyhouse:hover, .dm-card-sair:hover, .dm-card-sisgee:hover {
+    background: var(--gray-13);
+    transition: .3s ease-in-out;
+}
