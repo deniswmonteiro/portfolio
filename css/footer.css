@@ -1,0 +1,50 @@
+#dm-footer {
+    padding-top: 60px;
+    background: var(--blue-6);
+}
+
+#dm-contact {
+    padding-top: 60px;
+    padding-bottom: 44px;
+    background: var(--gray-13);
+    top: -120px;
+    box-shadow: 0 5px 5px rgba(20, 20, 20, .1), 0 10px 10px rgba(20, 20, 20, .2);
+}
+
+#dm-contact p {
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--gray-1);
+}
+
+#dm-communication {
+    padding-top: 160px;
+}
+
+#dm-communication i {
+    font-size: 24px;
+    color: var(--blue-1);
+}
+
+#dm-communication p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--gray-4);
+}
+
+#dm-communication span {
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--gray-1);
+}
+
+#dm-copyright {
+    margin-top: 44px;
+    background: var(--blue-1);
+}
+
+#dm-copyright p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--gray-13);
+}
