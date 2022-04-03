@@ -3,11 +3,23 @@
     background-size: cover;
 }
 
+.dm-title-1 {
+    font-size: 64px;
+    line-height: 1.1;
+    color: var(--gray-1);
+}
+
 .dm-title-2 {
     font-size: 110px;
     line-height: 1.1;
     color: var(--gray-3);
     word-wrap: break-word;
+}
+
+.dm-title-3 {
+    font-size: 48px;
+    line-height: 1.1;
+    color: var(--gray-8);
 }
 
 .dm-text {

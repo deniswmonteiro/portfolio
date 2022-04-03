@@ -1,0 +1,12 @@
+#dm-contact {
+    padding-top: 60px;
+    padding-bottom: 44px;
+    background: var(--gray-13);
+    top: -60px;
+}
+
+#dm-contact p {
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--gray-1);
+}
