@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denis Matos &bull; Full-stack Developer e UI/UX Designer</title>
+    <title>Denis Matos | Full-stack Developer e UI/UX Designer</title>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,58 +12,63 @@
     <!-- Header -->
     <div id="dm-wrapper">
         <header id="dm-header">
-            <nav class="container navbar navbar-expand-lg navbar-light pt-3 pb-3">
+            <nav class="container navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">
-                        <img src="/img/logo-header.svg" alt="Logo do cabeçalho">
+                        <svg id="dm-header-logo" width="70" height="55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.741 3 2.785 25.186a4 4 0 0 0 0 5.628L24.74 53m0-50v39.634V28m0-25 5.997 24.616c.977 4.012 6.653 4.093 7.744.11L45.26 3m0 50 21.956-22.186a4 4 0 0 0 0-5.628L45.26 3m0 0v39.634" stroke="#BEBEFF" stroke-width="3"/>
+                        </svg>
                     </a>
                     
-                    <button class="navbar-toggler" type="button" 
-                        data-bs-toggle="collapse"
-                        data-bs-target="#dm-header-menu" 
+                    <button type="button"
+                        id="btn-mobile"
                         aria-controls="dm-header-menu" 
                         aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        aria-label="Toggle menu mobile"
+                        onclick="return event.preventDefault(), window.toggleMenuMobile(this)">
+                        <span id="icon-hamburger"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end"
-                        id="dm-header-menu">
-                        <ul class="navbar-nav mr-auto mb-2 mb-lg-0 align-items-end">
-                            <li class="nav-item me-2">
-                                <a class="nav-link ps-2 pe-2 active" href="#dm-about"
-                                    aria-current="page">
-                                    Sobre
-                                </a>
-                            </li>
-                            <li class="nav-item ms-2 me-2">
-                                <a class="nav-link ps-2 pe-2" href="#dm-education">
-                                    Formação
-                                </a>
-                            </li>
-                            <li class="nav-item ms-2 me-2">
-                                <a class="nav-link ps-2 pe-2" href="#dm-portfolio">
-                                    Portfólio
-                                </a>
-                            </li>
-                            <li class="nav-item ms-2 me-2">
-                                <a class="nav-link ps-2 pe-2" href="#dm-services">
-                                    Serviços
-                                </a>
-                            </li>
-                            <li class="nav-item ms-2">
-                                <a class="nav-link ps-2 pe-2" href="#dm-contact">
-                                    Contato
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0 align-items-end" id="dm-header-menu">
+                        <li class="nav-item ms-2 me-2 d-flex align-items-center">
+                            <a class="nav-link text-uppercase ps-2 pe-2" href="#dm-about"
+                                onclick="return event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
+                                Sobre
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2 me-2">
+                            <a class="nav-link text-uppercase ps-2 pe-2" href="#dm-education"
+                                onclick="return event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
+                                Formação
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2 me-2">
+                            <a class="nav-link text-uppercase ps-2 pe-2" href="#dm-portfolio"
+                                onclick="return event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
+                                Portfólio
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2 me-2">
+                            <a class="nav-link text-uppercase ps-2 pe-2" href="#dm-services"
+                                onclick="return event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
+                                Serviços
+                            </a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a href="https://wa.me/5591985126877" target="_blank"
+                                class="btn btn-lg text-uppercase dm-btn-outline-blue"
+                                id="dm-header-contact">
+                                Contato
+                                <i class="bi bi-whatsapp ms-2"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
 
         <!-- Introduction -->
-        <section class="container position-relative" id="dm-wrapper-intro">
-            <div class="row dm-intro">
+        <div class="container position-relative" id="dm-intro">
+            <div class="row dm-intro-content">
                 <div class="col-12 text-center">
                     <h1 class="fw-bold mb-3 dm-title-1">
                         Olá, meu nome é Denis Matos.
@@ -71,23 +76,25 @@
                     <p class="mb-5 dm-subtitle">
                         Full-stack Developer &bull; UI/UX Designer
                     </p>
-                    <button class="btn btn-lg text-uppercase dm-btn-outline-blue">
+                    <a href="#dm-about" class="btn btn-lg text-uppercase dm-btn-outline-blue"
+                        id="btn-more"
+                        onclick="return window.changeTitle(this)">
                         Saiba Mais
                         <i class="bi bi-chevron-down ms-2"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <img src="./img/ilustração.svg" alt="Ilustração da introdução"
+                    <img src="./img/illustration.svg" alt="Ilustração da introdução"
                         class="position-absolute dm-illustration">
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 
     <!-- About -->
-    <section class="container" id="dm-about">
+    <section class="container dm-section" id="dm-about">
         <div class="row">
             <div class="col-12 col-md-4">
                 <h2 class="text-uppercase fw-bold dm-title-2">Sobre</h2>
@@ -330,7 +337,7 @@
     </section>
 
     <!-- Education -->
-    <section id="dm-education">
+    <section class="dm-section" id="dm-education">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-3">
@@ -394,13 +401,14 @@
     </section>
 
     <!-- Portfolio -->
-    <section id="dm-portfolio">
+    <section class="dm-section" id="dm-portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-3">
                     <h2 class="text-uppercase fw-bold dm-title-2">Portfólio</h2>
                 </div>
                 <div class="col-12 col-md-8 offset-md-1">
+                    <!-- MUDAR A COR DE FUNDO DO TEXTO EM NEGRITO QUANDO O FOCO ESTIVER NA SEÇÃO -->
                     <p class="pt-3 dm-text">
                         Alguns dos projetos mais recentes em que trabalhei. Os sites são
                         <span class="fw-bold dm-text-bold">responsivos</span>, com conteúdo que se adapta ao tamanho da tela de <span class="fw-bold dm-text-bold">tablets</span> e <span class="fw-bold dm-text-bold">smartphones</span>, e com o layout criado para atender ao propósito do projeto.
@@ -471,7 +479,7 @@
     </section>
 
     <!-- Services -->
-    <section id="dm-services">
+    <section class="dm-section" id="dm-services">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-3">
@@ -612,7 +620,8 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-4 mb-3 text-end">
-                        <a href="#" class="btn btn-lg text-uppercase dm-btn-outline-blue">
+                        <a href="https://wa.me/5591985126877" target="_blank"
+                            class="btn btn-lg text-uppercase dm-btn-outline-blue">
                             Entrar em Contato
                             <i class="bi bi-whatsapp ms-2"></i>
                         </a>
@@ -653,10 +662,11 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-10">
                         <p>
-                            &copy; 2022 Denis Matos &ndash; Todos os direitos reservados.
+                            &copy; 2022 Denis Matos
                         </p>
                     </div>
                     <div class="col-12 col-md-2 d-flex justify-content-end">
+                        <!-- COLOCAR LINK PARA A HOME -->
                         <img src="./img/logo-footer.svg" alt="Logo do rodapé">
                     </div>
                 </div>

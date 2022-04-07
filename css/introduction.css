@@ -1,9 +1,10 @@
-#dm-wrapper-intro {
+#dm-intro {
+    padding-top: 34px;
     padding-bottom: 265px;
 }
 
-.dm-intro {
-    padding-top: 80px;
+.dm-intro-content {
+    padding-top: 160px;
     padding-bottom: 60px;
 }
 

@@ -67,6 +67,11 @@
     transition: .3s ease-in-out;
 }
 
+.dm-btn-outline-blue:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .dm-btn-outline-blue:hover {
     color: var(--gray-13);
     background-color: var(--blue-1);
