@@ -83,7 +83,7 @@
                     </p>
                     <a href="#dm-about" class="btn btn-lg text-uppercase dm-btn-outline-blue"
                         id="btn-more"
-                        onclick="window.changeTitle(this)">
+                        onclick="event.preventDefault(), window.changeTitle(this), window.scrollToSection(this)">
                         Saiba Mais
                         <i class="bi bi-chevron-down ms-2"></i>
                     </a>

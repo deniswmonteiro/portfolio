@@ -1,11 +1,9 @@
 $(document).ready(function () {
-    const skillFrontEnd = document.querySelector("#dm-pills-front-tab");
-
-    window.animateSkills(skillFrontEnd);  // animar somente quando item estiver aparecendo
+    window.addEventListener("scroll", animateHeaderProgress);
     window.addEventListener("load", changeHeaderBackground);
     window.addEventListener("scroll", changeHeaderBackground);
     window.addEventListener("scroll", setLinkActive);
-    window.addEventListener("scroll", animateHeaderProgress);
+    window.addEventListener("load", typeWrite);
 });
 
 /** Animate header progress */
@@ -55,42 +53,34 @@ function setLinkActive() {
         const scrollTop = window.scrollY;
 
         if ((sectionOffsetTop - headerHeight) < scrollTop && ((sectionOffsetTop - headerHeight + sectionHeight)) > scrollTop) {
-            itemMenu.classList.add("link-active")
+            itemMenu.classList.add("link-active");
+            section.classList.add("section-active");
         }
 
-        else itemMenu.classList.remove("link-active")
+        else {
+            itemMenu.classList.remove("link-active");
+            section.classList.remove("section-active");
+        }
     });
 }
 
 /** Type writter effect */
-typeWrite(document.querySelector(".dm-title-1"));
+function typeWrite() {
+    const title = document.querySelector(".dm-title-1");
+    const text = title.innerHTML.split("");
 
-function typeWrite(el) {
-    const text = el.innerHTML.split("");
-
-    el.innerHTML = " ";
+    title.innerHTML = " ";
 
     text.forEach((letter, i) => {
-        setTimeout(() => el.innerHTML += letter, (75 * i))
+        setTimeout(() => title.innerHTML += letter, (50 * i))
     });
-}
-
-/** Scroll to section */
-window.scrollToSection = function (el) {
-    const elemId = el.getAttribute("href");
-    const sectionTarget = document.querySelector(`${elemId}`);
-    const sectionOffsetTop = sectionTarget.offsetTop;
-
-    $("html, body").animate({
-        scrollTop: sectionOffsetTop - 70
-    }, 300);
 }
 
 /** Change document title */
 window.changeTitle = function (el) {
     const elemMenu = el.innerText;
 
-    if (el.id === "btn-more") document.title = "Sobre";
+    if (el.id === "btn-more") document.title = `${document.title.split("|")[0]} | Sobre`;
 
     else {
         document.title = `${document.title.split("|")[0]} | ${elemMenu.substr(0, 1) + elemMenu.substr(1).toLowerCase()}`;
