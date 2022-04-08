@@ -77,3 +77,45 @@
     background-color: var(--blue-1);
     transition: .3s ease-in-out;
 }
+
+/** Pace */
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+  
+.pace-inactive {
+    display: none;
+}
+
+.pace .pace-progress {
+    background: var(--blue-1);
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 3px;
+}
+
+/** Header progress */
+#dm-header-progress-container {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  
+  #dm-header-progress {
+    width: 100%;
+    height: 5px
+  }
+  
+  #dm-header-progress-bar {
+    height: 5px;
+    background: var(--blue-1);
+    width: 0%;
+  }

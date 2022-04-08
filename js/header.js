@@ -2,11 +2,21 @@ $(document).ready(function () {
     const skillFrontEnd = document.querySelector("#dm-pills-front-tab");
 
     window.animateSkills(skillFrontEnd);  // animar somente quando item estiver aparecendo
-
     window.addEventListener("load", changeHeaderBackground);
     window.addEventListener("scroll", changeHeaderBackground);
     window.addEventListener("scroll", setLinkActive);
+    window.addEventListener("scroll", animateHeaderProgress);
 });
+
+/** Animate header progress */
+function animateHeaderProgress() {
+    const progressBar = document.querySelector("#dm-header-progress-bar");
+    const windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (windowScroll / height) * 100;
+
+    progressBar.style.width = `${scrolled}%`;
+}
 
 /** Change headers background when scroll is above of the title */
 function changeHeaderBackground() {
@@ -61,9 +71,7 @@ function typeWrite(el) {
     el.innerHTML = " ";
 
     text.forEach((letter, i) => {
-        setTimeout(() => {
-            el.innerHTML += letter;
-        }, 75 * i)
+        setTimeout(() => el.innerHTML += letter, (75 * i))
     });
 }
 
@@ -99,7 +107,6 @@ window.linkCloseMenuMobile = function () {
 /** Toggle mobile menu  */
 window.toggleMenuMobile = function (el, link = false) {
     const nav = document.querySelector("#dm-header-menu");
-    const menuIcons = document.querySelectorAll(`#${nav.id} i`);
     let active;
 
     nav.classList.toggle("active");

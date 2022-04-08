@@ -14,6 +14,6 @@ window.animateSkills = function (el) {
 
         $(progress).animate({
             width: `${attribute}%`
-        }, 2000)
+        }, 2000);
     });
 }

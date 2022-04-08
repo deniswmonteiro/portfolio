@@ -12,6 +12,11 @@
     <!-- Header -->
     <div id="dm-wrapper">
         <header id="dm-header">
+            <div id="dm-header-progress-container">
+                <div id="dm-header-progress">
+                    <div id="dm-header-progress-bar"></div>
+                </div> 
+            </div>
             <nav class="container navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">
@@ -25,31 +30,31 @@
                         aria-controls="dm-header-menu" 
                         aria-expanded="false"
                         aria-label="Toggle menu mobile"
-                        onclick="return event.preventDefault(), window.toggleMenuMobile(this)">
+                        onclick="event.preventDefault(), window.toggleMenuMobile(this)">
                         <span id="icon-hamburger"></span>
                     </button>
                     <ul class="navbar-nav mr-auto mb-2 mb-lg-0 align-items-end" id="dm-header-menu">
                         <li class="nav-item ms-2 me-2 d-flex align-items-center">
                             <a class="nav-link text-uppercase ps-2 pe-2" href="#dm-about"
-                                onclick="return event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
+                                onclick="event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
                                 Sobre
                             </a>
                         </li>
                         <li class="nav-item ms-2 me-2">
                             <a class="nav-link text-uppercase ps-2 pe-2" href="#dm-education"
-                                onclick="return event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
+                                onclick="event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
                                 Formação
                             </a>
                         </li>
                         <li class="nav-item ms-2 me-2">
                             <a class="nav-link text-uppercase ps-2 pe-2" href="#dm-portfolio"
-                                onclick="return event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
+                                onclick="event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
                                 Portfólio
                             </a>
                         </li>
                         <li class="nav-item ms-2 me-2">
                             <a class="nav-link text-uppercase ps-2 pe-2" href="#dm-services"
-                                onclick="return event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
+                                onclick="event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
                                 Serviços
                             </a>
                         </li>
@@ -78,7 +83,7 @@
                     </p>
                     <a href="#dm-about" class="btn btn-lg text-uppercase dm-btn-outline-blue"
                         id="btn-more"
-                        onclick="return window.changeTitle(this)">
+                        onclick="window.changeTitle(this)">
                         Saiba Mais
                         <i class="bi bi-chevron-down ms-2"></i>
                     </a>
@@ -127,7 +132,7 @@
                                     role="tab"
                                     aria-controls="dm-pills-front"
                                     aria-selected="true"
-                                    onclick="return window.animateSkills(this)">
+                                    onclick="window.animateSkills(this)">
                                     Front-end
                                 </button>
                             </li>
@@ -139,7 +144,7 @@
                                     role="tab"
                                     aria-controls="dm-pills-back"
                                     aria-selected="false"
-                                    onclick="return window.animateSkills(this)">
+                                    onclick="window.animateSkills(this)">
                                     Back-end
                                 </button>
                             </li>
@@ -151,7 +156,7 @@
                                     role="tab"
                                     aria-controls="dm-pills-bd"
                                     aria-selected="false"
-                                    onclick="return window.animateSkills(this)">
+                                    onclick="window.animateSkills(this)">
                                     Base de Dados
                                 </button>
                             </li>
@@ -163,7 +168,7 @@
                                     role="tab"
                                     aria-controls="dm-pills-design"
                                     aria-selected="false"
-                                    onclick="return window.animateSkills(this)">
+                                    onclick="window.animateSkills(this)">
                                     Design
                                 </button>
                             </li>
