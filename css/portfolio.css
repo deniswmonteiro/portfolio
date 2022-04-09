@@ -11,8 +11,27 @@
     font-size: 20px;
     line-height: 1.4;
     color: var(--gray-1);
-    transition: .3s ease-in-out;
-    min-height: 240px;
+    min-height: 242px;
+    transition: .3s ease-out;
+}
+
+.dm-portfolio-info {
+    display: none;
+}
+
+.dm-portfolio-info.dm-portfolio-active {
+    display: block;
+    animation: showPortfolioInfo .8s forwards;
+}
+
+@keyframes showPortfolioInfo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .dm-portfolio-info p {
@@ -33,5 +52,9 @@
 
 .dm-card-sunnyhouse:hover, .dm-card-sair:hover, .dm-card-sisgee:hover {
     background: var(--gray-13);
-    transition: .3s ease-in-out;
+    transition: .3s ease-in;
+}
+
+#dm-modal-sisgee img {
+    box-shadow: 0 1px 2px rgba(20, 20, 20, .1), 0 4px 8px rgba(20, 20, 20, .2);
 }

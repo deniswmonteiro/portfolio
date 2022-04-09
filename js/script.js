@@ -4,3 +4,4 @@ import "../node_modules/pace-js/pace.min.js";
 import "./general.js";
 import "./header.js";
 import "./about.js";
+import "./portfolio.js";

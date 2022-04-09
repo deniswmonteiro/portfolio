@@ -1,3 +1,10 @@
+/** Custom Bootstrap */
+.modal-backdrop {
+    background: var(--gradient);
+    opacity: 1 !important;
+}
+/** ----------------------------------- */
+
 /** Change scrollbar theme */
 /* Works on Firefox */
 * {
@@ -19,6 +26,7 @@
     border-radius: 20px;
     border: 3px solid var(--blue-1);
 }
+/** ----------------------------------- */
 
 #dm-wrapper {
     background: url("../img/bg-intro.jpg") no-repeat center;
@@ -42,6 +50,12 @@
     font-size: 48px;
     line-height: 1.1;
     color: var(--gray-8);
+}
+
+.dm-title-4 {
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--gray-10) !important;
 }
 
 .dm-text {
@@ -140,4 +154,21 @@
     height: 5px;
     background: var(--blue-1);
     width: 0%;
+}
+
+.dm-modal-header {
+    background: var(--gray-13);
+}
+
+.btn-close-modal {
+    background-color: var(--blue-1);
+    transition: .3s ease-out;
+}
+
+.btn-close-modal:hover {
+    transition: .3s ease-in;
+}
+
+.dm-modal-body {
+    background: var(--gray-1);
 }

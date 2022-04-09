@@ -413,7 +413,6 @@
                     <h2 class="text-uppercase fw-bold dm-title-2">Portfólio</h2>
                 </div>
                 <div class="col-12 col-md-8 offset-md-1">
-                    <!-- MUDAR A COR DE FUNDO DO TEXTO EM NEGRITO QUANDO O FOCO ESTIVER NA SEÇÃO -->
                     <p class="pt-3 dm-text">
                         Alguns dos projetos mais recentes em que trabalhei. Os sites são
                         <span class="fw-bold dm-text-bold">responsivos</span>, com conteúdo que se adapta ao tamanho da tela de <span class="fw-bold dm-text-bold">tablets</span> e <span class="fw-bold dm-text-bold">smartphones</span>, e com o layout criado para atender ao propósito do projeto.
@@ -422,18 +421,75 @@
                     <div class="row dm-portfolio-content">
                         <!-- Sunny House -->
                         <div class="col-12 col-md-4 mb-3">
-                            <div class="card border-0 mt-0 rr dm-card-sunnyhouse">
-                                <div class="card-body d-flex justify-content-center p-4">
-                                    <img src="./img/logo-sunny-house.svg" alt="Logo da Sunny House">
+                            <div class="card border-0 mt-0 dm-card-sunnyhouse" id="dm-card-sunnyhouse"
+                                onmouseover="window.changeProjectToBackground(this)"
+                                onmouseout="window.changeProjectToImage(this)">
+                                <figure class="card-body d-flex justify-content-center p-4">
+                                    <img src="./img/portfolio/sunnyhouse/logo-sunny-house.svg"
+                                        alt="Logo da Sunny House">
 
-                                    <div class="d-none dm-portfolio-info">
+                                    <figcaption class="text-center dm-portfolio-info">
                                         <p>
                                             Sistema de gerenciamento de contratos para geração de energia solar.
                                         </p>
-                                        <a href="#" class="btn btn-lg text-uppercase mt-4 dm-btn-outline-blue">
+                                        <a class="btn btn-lg text-uppercase mt-4 dm-btn-outline-blue"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#dm-modal-sunnyhouse">
                                             Ver Imagens
                                             <i class="bi bi-chevron-right ms-2"></i>
                                         </a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <!-- Modal Sunny House -->
+                        <div class="modal fade"
+                            id="dm-modal-sunnyhouse"
+                            tabindex="-1"
+                            aria-labelledby="dm-modal-sunnyhouse-label"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header dm-modal-header">
+                                        <h4 class="modal-title fw-bold dm-title-4"
+                                            id="dm-modal-sunnyhouse-label">
+                                            ERP Sunny House
+                                        </h4>
+                                        <button type="button" class="btn-close btn-lg btn-close-modal"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <!-- REORDENAR IMAGENS QUANDO ESTIVER NO MOBILE -->
+                                    <div class="modal-body p-5 dm-modal-body">
+                                        <div class="row">
+                                            <div class="col-12 col-xl-9">
+                                                <figure class="figure">
+                                                    <img src="./img/portfolio/sunnyhouse/img-sh-1.jpg" alt="..."
+                                                        class="figure-img img-fluid rounded">
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 col-xl-3">
+                                                <figure class="figure">
+                                                    <img src="./img/portfolio/sunnyhouse/img-sh-2.jpg" alt="..."
+                                                    class="figure-img img-fluid rounded">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-xl-9">
+                                                <figure class="figure">
+                                                    <img src="./img/portfolio/sunnyhouse/img-sh-3.jpg" alt="..."
+                                                    class="figure-img img-fluid rounded">
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 col-xl-3">
+                                                <figure class="figure">
+                                                    <img src="./img/portfolio/sunnyhouse/img-sh-4.jpg" alt="..."
+                                                    class="figure-img img-fluid rounded">
+                                                </figure>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -441,38 +497,96 @@
 
                         <!-- SAIR -->
                         <div class="col-12 col-md-4 mb-3">
-                            <div class="card border-0 mt-0 dm-card-sair">
-                                <div class="card-body d-flex justify-content-center p-4">
-                                    <img src="./img/logo-sair.svg" alt="Logo do SAIR">
+                            <div class="card border-0 mt-0 dm-card-sair" id="dm-card-sair"
+                                onmouseover="window.changeProjectToBackground(this)"
+                                onmouseout="window.changeProjectToImage(this)">
+                                <figure class="card-body d-flex justify-content-center p-4">
+                                    <img src="./img/portfolio/sair/logo-sair.svg" alt="Logo do SAIR">
 
-                                    <div class="d-none dm-portfolio-info">
+                                    <figcaption class="text-center dm-portfolio-info">
                                         <p>
                                             Aplicativo Web criado para controlar sistema elétrico automatizado.
                                         </p>
-                                        <a href="https://projetoceamazon.herokuapp.com"
+                                        <a href="https://projetoceamazon.herokuapp.com" target="_blank"
                                             class="btn btn-lg text-uppercase mt-4 dm-btn-outline-blue">
                                             Visitar Site
                                             <i class="bi bi-chevron-right ms-2"></i>
                                         </a>
-                                    </div>
-                                </div>
+                                    </figcaption>
+                                </figure>
                             </div>
                         </div>
 
                         <!-- SISGEE -->
                         <div class="col-12 col-md-4">
-                            <div class="card border-0 mt-0 dm-card-sisgee">
-                                <div class="card-body d-flex justify-content-center p-4">
-                                    <img src="./img/logo-sisgee.svg" alt="Logo do SISGEE">
+                            <div class="card border-0 mt-0 dm-card-sisgee" id="dm-card-sisgee"
+                                onmouseover="window.changeProjectToBackground(this)"
+                                onmouseout="window.changeProjectToImage(this)">
+                                <figure class="card-body d-flex justify-content-center p-4">
+                                    <img src="./img/portfolio/sisgee/logo-sisgee.svg" alt="Logo do SISGEE">
                                     
-                                    <div class="d-none dm-portfolio-info">
+                                    <figcaption class="text-center dm-portfolio-info">
                                         <p>
                                             Aplicativo Web criado para gerenciar sistema de energia elétrica.
                                         </p>
-                                        <a href="#" class="btn btn-lg text-uppercase mt-4 dm-btn-outline-blue">
+                                        <a href="#" class="btn btn-lg text-uppercase mt-4 dm-btn-outline-blue"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#dm-modal-sisgee">
                                             Ver Imagens
                                             <i class="bi bi-chevron-right ms-2"></i>
                                         </a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <!-- Modal SISGEE -->
+                        <div class="modal fade"
+                            id="dm-modal-sisgee"
+                            tabindex="-1"
+                            aria-labelledby="dm-modal-sisgee-label"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header dm-modal-header">
+                                        <h4 class="modal-title fw-bold dm-title-4"
+                                            id="dm-modal-sisgee-label">
+                                            SISGEE
+                                        </h4>
+                                        <button type="button" class="btn-close btn-lg btn-close-modal"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body p-5 dm-modal-body">
+                                        <div class="row">
+                                            <div class="col-12 col-xl-8">
+                                                <figure class="figure">
+                                                    <img src="./img/portfolio/sisgee/img-sisgee-1.jpg" alt="..."
+
+                                                        class="figure-img img-fluid rounded">
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 col-xl-4">
+                                                <figure class="figure">
+                                                    <img src="./img/portfolio/sisgee/img-sisgee-2.jpg" alt="..."
+                                                    class="figure-img img-fluid rounded">
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-xl-9">
+                                                <figure class="figure">
+                                                    <img src="./img/portfolio/sisgee/img-sisgee-3.jpg" alt="..."
+                                                    class="figure-img img-fluid rounded">
+                                                </figure>
+                                            </div>
+                                            <div class="col-6 col-xl-3">
+                                                <figure class="figure">
+                                                    <img src="./img/portfolio/sisgee/img-sisgee-4.jpg" alt="..."
+                                                    class="figure-img img-fluid rounded">
+                                                </figure>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
