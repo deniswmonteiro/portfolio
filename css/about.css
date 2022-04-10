@@ -1,6 +1,6 @@
 #dm-about {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 144px;
+    padding-bottom: 144px;
 }
 
 #dm-about .dm-title-2 {
@@ -9,7 +9,7 @@
 
 .dm-about-card {
     min-height: 25.813rem;
-    margin-top: 30px;
+    margin-top: 60px;
     background-color: var(--gray-1);
     border-color: var(--gray-2);
 }
