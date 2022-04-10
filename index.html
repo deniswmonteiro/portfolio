@@ -123,7 +123,8 @@
 
                         <ul class="nav nav-pills mb-4" id="dm-pills-tab-skills" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link text-uppercase dm-nav-link active" type="button"
+                                <button type="button"
+                                    class="nav-link text-uppercase dm-nav-link"
                                     id="dm-pills-front-tab"
                                     data-bs-toggle="pill"
                                     data-bs-target="#dm-pills-front"
@@ -726,7 +727,7 @@
     <footer id="dm-footer">
         <div class="container position-relative">
             <!-- Contact -->
-            <div class="rounded position-absolute ps-5 pe-5" id="dm-contact">
+            <div class="rounded position-absolute p-5" id="dm-contact">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-3 mb-3 text-center">
                         <h2 class="text-uppercase fw-bold dm-title-3 text-start">Vamos Conversar?</h2>
@@ -783,8 +784,10 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-2 d-flex justify-content-end">
-                        <!-- COLOCAR LINK PARA A HOME -->
-                        <img src="./img/logo-footer.svg" alt="Logo do rodapé">
+                        <a href="#dm-header" id="dm-go-to-header"
+                            onclick="event.preventDefault(), window.changeTitle(this), window.scrollToSection(this)">
+                            <img src="./img/logo-footer.svg" alt="Logo do rodapé">
+                        </a>
                     </div>
                 </div>
             </div>

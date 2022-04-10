@@ -82,6 +82,10 @@ window.changeTitle = function (el) {
 
     if (el.id === "btn-more") document.title = `${document.title.split("|")[0]} | Sobre`;
 
+    else if (el.id === "dm-go-to-header") {
+        document.title = `${document.title.split("|")[0]} | Full-stack Developer e UI/UX Designer`;
+    }
+
     else {
         document.title = `${document.title.split("|")[0]} | ${elemMenu.substr(0, 1) + elemMenu.substr(1).toLowerCase()}`;
     }
