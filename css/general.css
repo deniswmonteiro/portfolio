@@ -175,9 +175,23 @@
     background: var(--gray-1);
 }
 
+@media screen and (max-width: 767px) {
+    .dm-title-2 {
+        font-size: 96px;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .dm-title-1 {
         font-size: 32px;
+    }
+
+    .dm-title-2 {
+        font-size: 55px;
+    }
+
+    .dm-text {
+        font-size: 18px;
     }
 
     .dm-btn-outline-blue {

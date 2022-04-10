@@ -46,3 +46,25 @@
     width: 0%;
     background-color: var(--blue-1) !important;
 }
+
+@media screen and (max-width: 767px) {
+    #dm-about {
+        padding-top: 108px;
+        padding-bottom: 108px;
+    }
+
+    .dm-about-card .card-body {
+        padding: 2rem 1rem !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #dm-about {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+    .dm-about-card {
+        margin-top: 48px;
+    }
+}
