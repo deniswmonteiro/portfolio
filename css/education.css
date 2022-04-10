@@ -1,6 +1,6 @@
 #dm-education {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 144px;
+    padding-bottom: 144px;
     background: var(--gray-13);
 }
 
@@ -9,12 +9,12 @@
 }
 
 .dm-education-card {
-    margin-top: 20px;
     background-color: var(--gray-11);
     border-color: var(--gray-12);
 }
 
 .dm-card-transparent {
+    margin-top: 60px;
     background-color: transparent;
     border: none;
 }
