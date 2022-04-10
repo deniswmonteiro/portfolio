@@ -98,6 +98,8 @@
 }
 
 .dm-btn-outline-blue {
+    font-size: 20px !important;
+    line-height: 1.4;
     color: var(--blue-1);
     border-color: var(--blue-1);
     transition: .3s ease-in-out;
@@ -171,4 +173,15 @@
 
 .dm-modal-body {
     background: var(--gray-1);
+}
+
+@media screen and (max-width: 575px) {
+    .dm-title-1 {
+        font-size: 32px;
+    }
+
+    .dm-btn-outline-blue {
+        font-size: 18px !important;
+        display: block;
+    }
 }

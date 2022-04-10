@@ -17,3 +17,24 @@
 .dm-illustration {
     right: 0;
 }
+
+@media screen and (max-width: 575px) {
+    #dm-intro {
+        padding-top: 34px;
+        padding-bottom: 265px;
+    }
+    
+    .dm-intro-content {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .dm-subtitle {
+        font-size: 18px;
+    }
+
+    .dm-illustration {
+        right: 12px;
+        bottom: 36px;
+    }
+}

@@ -51,9 +51,11 @@
 }
 
 #dm-header #dm-header-menu a {
+    font-size: 18px !important;
+    line-height: 1.4;
     color: var(--gray-1);
     min-height: 1px;
-    display: block;
+    display: inline-block;
 }
 
 #dm-header-menu a:not(#dm-header-contact):hover {
@@ -196,5 +198,12 @@
         transform: rotate(-135deg);
         top: -8px;
         background: var(--blue-1);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #dm-header #dm-header-menu a {
+        display: block;
+        font-size: 1rem !important;
     }
 }
