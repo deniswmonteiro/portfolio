@@ -22,9 +22,7 @@
     color: var(--gray-10);
 }
 
-.dm-services-card p {
-    font-size: 20px;
-    line-height: 1.4;
+.dm-services-card .dm-text {
     color: var(--gray-13);
 }
 
@@ -40,12 +38,17 @@
 }
 
 @media screen and (max-width: 767px) {
+    #dm-services {
+        padding-top: 108px;
+        padding-bottom: 108px;
+    }
+
     .dm-services-card p {
         margin-bottom: 24px;
     }
 
     .dm-card-lg {
-        min-height: 14.375rem;
+        min-height: 13.75rem;
     }
 }
 
