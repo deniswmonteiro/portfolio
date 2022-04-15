@@ -1,6 +1,6 @@
 #dm-education {
-    padding-top: 144px;
-    padding-bottom: 144px;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
     background: var(--gray-13);
 }
 
@@ -22,32 +22,32 @@
 }
 
 #dm-education p {
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 1.4;
     color: var(--gray-1);
 }
 
 #dm-education span {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.4;
     color: var(--gray-4);
 }
 
 .dm-list-courses {
-    font-size: 20px;
+    font-size: 1.25em;
     color: var(--gray-1);
 }
 
 @media screen and (max-width: 767px) {
     #dm-education {
-        padding-top: 108px;
-        padding-bottom: 108px;
+        padding-top: 6.75rem;
+        padding-bottom: 6.75rem;
     }
 }
 
 @media screen and (max-width: 575px) {
     #dm-education {
-        padding-top: 78px;
-        padding-bottom: 78px;
+        padding-top: 4.875rem;
+        padding-bottom: 4.875rem;
     }
 }
