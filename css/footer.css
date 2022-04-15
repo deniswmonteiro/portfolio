@@ -1,49 +1,49 @@
 #dm-footer {
-    padding-top: 144px;
+    padding-top: 9rem;
     background: var(--blue-6);
 }
 
 #dm-contact {
-    padding-bottom: 32px !important;
+    padding-bottom: 2rem !important;
     background: var(--gray-13);
-    top: -216px;
+    top: -13.5rem;
     box-shadow: 0 1px 2px rgba(20, 20, 20, .1), 0 4px 8px rgba(20, 20, 20, .2);
 }
 
 #dm-contact p {
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 1.4;
     color: var(--gray-1);
 }
 
 #dm-communication {
-    padding-top: 72px;
+    padding-top: 4.5rem;
 }
 
 #dm-communication i {
-    font-size: 24px;
+    font-size: 1.5em;
     color: var(--blue-1);
 }
 
 #dm-communication p {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.4;
     color: var(--gray-4);
 }
 
 #dm-communication span {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.4;
     color: var(--gray-1);
 }
 
 #dm-copyright {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     background: var(--blue-1);
 }
 
 #dm-copyright p {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 1.4;
     color: var(--gray-13);
 }
@@ -63,29 +63,29 @@
     }
 
     #dm-communication {
-        padding-top: 160px;
+        padding-top: 10rem;
     }
 }
 
 @media screen and (max-width: 991px) {
     #dm-communication {
-        padding-top: 188px;
+        padding-top: 11.75rem;
     }
 }
 
 @media screen and (max-width: 767px) {
     #dm-communication {
-        padding-top: 198px;
+        padding-top: 12.375rem;
     }
 
     #dm-copyright {
-        padding-top: 48px !important;
-        padding-bottom: 48px !important;
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
     }
 
     #dm-copyright p { 
         text-align: center;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
     }
 
     #dm-copyright #dm-footer-logo {
@@ -95,13 +95,13 @@
 
 @media screen and (max-width: 575px) {
     #dm-contact {
-        top: -180px;
+        top: -11.25rem;
         left: 0;
-        margin-right: 12px;
-        margin-left: 12px;
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
     }
 
     #dm-communication {
-        padding-top: 238px;
+        padding-top: 14.875rem;
     }
 }
