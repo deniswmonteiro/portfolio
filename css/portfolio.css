@@ -1,17 +1,17 @@
 #dm-portfolio {
-    padding-top: 144px;
-    padding-bottom: 144px;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
 }
 
 .dm-portfolio-content {
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
 .dm-card-sunnyhouse, .dm-card-sair, .dm-card-sisgee {
     font-size: 20px;
     line-height: 1.4;
     color: var(--gray-1);
-    min-height: 250px;
+    min-height: 15.625rem;
     transition: .3s ease-out;
 }
 
@@ -34,8 +34,12 @@
     }
 }
 
+.dm-portfolio-info .dm-btn-outline-blue {
+    font-size: 1.125em !important;
+}
+
 .dm-portfolio-info p {
-    min-height: 112px;
+    min-height: 7rem;
 }
 
 .dm-card-sunnyhouse {
@@ -61,14 +65,14 @@
 
 @media screen and (max-width: 767px) {
     #dm-portfolio {
-        padding-top: 108px;
-        padding-bottom: 108px;
+        padding-top: 6.75rem;
+        padding-bottom: 6.75rem;
     }
 }
 
 @media screen and (max-width: 575px) {
     #dm-portfolio {
-        padding-top: 72px;
-        padding-bottom: 72px;
+        padding-top: 4.875rem;
+        padding-bottom: 4.875rem;
     }
 }
