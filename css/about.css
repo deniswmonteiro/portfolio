@@ -47,6 +47,12 @@
     background-color: var(--blue-1) !important;
 }
 
+@media screen and (max-width: 991px) {
+    .dm-about-card {
+        min-height: 22.5rem;
+    }
+}
+
 @media screen and (max-width: 767px) {
     #dm-about {
         padding-top: 108px;
@@ -54,7 +60,7 @@
     }
 
     .dm-about-card .card-body {
-        padding: 2rem 1rem !important;
+        min-height: 35.938rem;
     }
 }
 

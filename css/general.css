@@ -175,6 +175,12 @@
     background: var(--gray-1);
 }
 
+@media screen and (max-width: 991px) {
+    .dm-card-body {
+        padding: 1.5rem !important;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .dm-title-2 {
         font-size: 96px;

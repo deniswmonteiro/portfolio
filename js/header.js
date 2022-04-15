@@ -1,9 +1,9 @@
 $(document).ready(function () {
     window.addEventListener("scroll", animateHeaderProgress);
-    window.addEventListener("load", changeHeaderBackground);
+    changeHeaderBackground();
     window.addEventListener("scroll", changeHeaderBackground);
     window.addEventListener("scroll", setLinkActive);
-    window.addEventListener("load", typeWrite);
+    typeWrite();
 });
 
 /** Animate header progress */
