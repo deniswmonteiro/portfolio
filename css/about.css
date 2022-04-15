@@ -1,6 +1,6 @@
 #dm-about {
-    padding-top: 144px;
-    padding-bottom: 144px;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
 }
 
 #dm-about .dm-title-2 {
@@ -9,7 +9,7 @@
 
 .dm-about-card {
     min-height: 25.813rem;
-    margin-top: 60px;
+    margin-top: 3.75rem;
     background-color: var(--gray-1);
     border-color: var(--gray-2);
 }
@@ -19,7 +19,7 @@
 }
 
 .dm-nav-link {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.4;
     color: var(--gray-13);
 }
@@ -34,7 +34,7 @@
 }
 
 .dm-skill-content p {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.4;
 }
 
@@ -55,8 +55,8 @@
 
 @media screen and (max-width: 767px) {
     #dm-about {
-        padding-top: 108px;
-        padding-bottom: 108px;
+        padding-top: 6.75rem;
+        padding-bottom: 6.75rem;
     }
 
     .dm-about-card .card-body {
@@ -66,11 +66,11 @@
 
 @media screen and (max-width: 575px) {
     #dm-about {
-        padding-top: 72px;
-        padding-bottom: 72px;
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
     }
 
     .dm-about-card {
-        margin-top: 48px;
+        margin-top: 3rem;
     }
 }
