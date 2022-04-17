@@ -1,8 +1,4 @@
-$(document).ready(function () {
-    window.addEventListener("scroll", changeSkillsName);
-    changeSkillsName();
-});
-
+/** Animate skills progress bar */
 window.animateSkills = function (el) {
     const skillId = el.id.split("-")[2];
     const skillProgress = document.querySelectorAll(`#dm-pills-${skillId} .progress-bar`);
@@ -18,7 +14,7 @@ window.animateSkills = function (el) {
 }
 
 /** Change skill name on media with max width up to 575px */
-function changeSkillsName() {
+window.changeSkillsName = function () {
     const skills = document.querySelectorAll("#dm-pills-tab-skills button");
 
     skills.forEach(skill => {

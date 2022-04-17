@@ -59,7 +59,7 @@
     transition: .3s ease-in;
 }
 
-#dm-modal-sisgee img {
+#dm-modal-sunnyhouse img, #dm-modal-sisgee img {
     box-shadow: 0 1px 2px rgba(20, 20, 20, .1), 0 4px 8px rgba(20, 20, 20, .2);
 }
 

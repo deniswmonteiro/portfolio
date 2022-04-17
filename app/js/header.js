@@ -1,11 +1,3 @@
-$(document).ready(function () {
-    window.addEventListener("scroll", animateHeaderProgress);
-    changeHeaderBackground();
-    window.addEventListener("scroll", changeHeaderBackground);
-    window.addEventListener("scroll", setLinkActive);
-    typeWrite();
-});
-
 /** Animate header progress */
 function animateHeaderProgress() {
     const progressBar = document.querySelector("#dm-header-progress-bar");

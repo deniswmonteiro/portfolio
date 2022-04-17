@@ -1,3 +1,16 @@
+$(document).ready(function () {
+    // Header
+    window.addEventListener("scroll", animateHeaderProgress);
+    changeHeaderBackground();
+    window.addEventListener("scroll", changeHeaderBackground);
+    window.addEventListener("scroll", setLinkActive);
+    typeWrite();
+
+    // About
+    window.addEventListener("scroll", changeSkillsName);
+    window.changeSkillsName();
+});
+
 /** Scroll to section */
 window.scrollToSection = function (el) {
     const elemId = el.getAttribute("href");
