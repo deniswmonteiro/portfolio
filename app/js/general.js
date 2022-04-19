@@ -4,6 +4,8 @@ $(document).ready(function () {
     changeHeaderBackground();
     window.addEventListener("scroll", changeHeaderBackground);
     window.addEventListener("scroll", setLinkActive);
+
+    // Introduction
     typeWrite();
 
     // About

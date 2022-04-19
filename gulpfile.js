@@ -29,6 +29,7 @@ function js() {
         .src([
             "app/js/general.js",
             "app/js/header.js",
+            "app/js/introduction.js",
             "app/js/about.js",
             "app/js/portfolio.js"
         ])

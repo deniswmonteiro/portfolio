@@ -56,18 +56,6 @@ function setLinkActive() {
     });
 }
 
-/** Type writter effect */
-function typeWrite() {
-    const title = document.querySelector(".dm-title-1");
-    const text = title.innerHTML.split("");
-
-    title.innerHTML = " ";
-
-    text.forEach((letter, i) => {
-        setTimeout(() => title.innerHTML += letter, (50 * i))
-    });
-}
-
 /** Change document title */
 window.changeTitle = function (el) {
     const elemMenu = el.innerText;
