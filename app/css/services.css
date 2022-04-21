@@ -37,15 +37,19 @@
     color: var(--gray-13);
 }
 
+@media screen and (max-width: 1399px) {
+    .dm-services-card p {
+        margin-bottom: 1.5rem;
+    }
+}
+
 @media screen and (max-width: 767px) {
     #dm-services {
         padding-top: 6.75rem;
         padding-bottom: 6.75rem;
     }
 
-    .dm-services-card p {
-        margin-bottom: 1.5rem;
-    }
+    
 
     .dm-card-lg {
         min-height: 13.75rem;

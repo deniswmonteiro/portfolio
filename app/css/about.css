@@ -47,6 +47,18 @@
     background-color: var(--blue-1) !important;
 }
 
+@media screen and (max-width: 1399px) {
+    .dm-about-card {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .dm-about-card {
+        margin-top: 3.75rem;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .dm-about-card {
         min-height: 22.5rem;
@@ -72,5 +84,9 @@
 
     .dm-about-card {
         margin-top: 3rem;
+    }
+
+    .dm-nav-link {
+        padding: .5rem;
     }
 }

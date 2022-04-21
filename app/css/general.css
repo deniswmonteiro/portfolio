@@ -41,14 +41,14 @@
 
 .dm-title-2 {
     font-size: 6.875em;
-    line-height: 1.3;
+    line-height: 1.1;
     color: var(--gray-3);
     word-wrap: break-word;
 }
 
 .dm-title-3 {
     font-size: 3em;
-    line-height: 1.3;
+    line-height: 1.1;
     color: var(--gray-8);
 }
 
@@ -197,8 +197,12 @@
         font-size: 3.4375em;
     }
 
+    .dm-title-3 {
+        font-size: 1.5em;
+    }
+
     .dm-btn-outline-blue {
-        font-size: 1.25em !important;
+        font-size: 1.125em !important;
         display: block;
     }
 }

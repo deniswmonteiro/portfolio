@@ -38,7 +38,7 @@
 }
 
 #dm-copyright {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     background: var(--blue-1);
 }
 
@@ -75,12 +75,12 @@
 
 @media screen and (max-width: 767px) {
     #dm-communication {
-        padding-top: 12.375rem;
+        padding-top: 12.875rem;
     }
 
     #dm-copyright {
-        padding-top: 3rem !important;
-        padding-bottom: 3rem !important;
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
     }
 
     #dm-copyright p { 
@@ -102,6 +102,6 @@
     }
 
     #dm-communication {
-        padding-top: 14.875rem;
+        padding-top: 0;
     }
 }
