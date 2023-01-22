@@ -11,6 +11,11 @@ $(document).ready(function () {
     // About
     window.addEventListener("scroll", changeSkillsName);
     window.changeSkillsName();
+
+    // Footer
+    const year = document.querySelector("#dm-year");
+
+    year.innerText = new Date().getFullYear();
 });
 
 /** Scroll to section */

@@ -367,21 +367,6 @@
                 </div>
                 <div class="col-12 col-xxl-8 offset-xxl-1 pt-4">
                     <div class="row">
-                        <!-- UFPA -->
-                        <div class="col-12 col-md-6 mb-4">
-                            <div class="card dm-education-card">
-                                <div class="card-body p-5 dm-card-body">
-                                    <h5 class="card-title text-uppercase d-flex dm-card-title mb-3">
-                                        Bacharel em Andamento
-                                    </h5>
-                                    <p class="fw-bold mb-4">
-                                        Engenharia da Computação
-                                    </p>
-                                    <span>UFPA</span>
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- SEDUC -->
                         <div class="col-12 col-md-6 mb-4">
                             <div class="card dm-education-card">
@@ -396,23 +381,24 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
                         <!-- Courses -->
                         <div class="col-12 col-md-6">
                             <div class="card dm-education-card">
                                 <div class="card-body p-5 dm-card-body">
-                                    <h5 class="card-title text-uppercase d-flex dm-card-title-icon mb-3">
-                                        <i class="bi bi-book-half"></i>
+                                    <h5 class="card-title text-uppercase d-flex dm-card-title mb-3">
                                         Cursos
                                     </h5>
-                                    <ul class="fw-bold dm-list-courses">
-                                        <li class="mb-3">UI Design</li>
-                                        <li class="mb-3">UX Design</li>
-                                        <li class="mb-3">Web Design</li>
-                                        <li>Laravel</li>
-                                    </ul>
+                                    <div class="d-flex justify-content-between">
+                                        <ul class="fw-bold dm-list-courses">
+                                            <li class="mb-3">UI Design</li>
+                                            <li>UX Design</li>
+                                        </ul>
+                                        <ul class="fw-bold dm-list-courses">
+                                            <li class="mb-3">Web Design</li>
+                                            <li>Laravel</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -795,7 +781,7 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-md-10">
                         <p>
-                            &copy; 2022 Denis Matos
+                            &copy; <span id="dm-year"></span> Denis Matos
                         </p>
                     </div>
                     <div class="col-12 col-md-2 d-flex justify-content-end" id="dm-footer-logo">
