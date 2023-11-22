@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    setLinkActive();
+
     // Header
     window.addEventListener("scroll", animateHeaderProgress);
     changeHeaderBackground();

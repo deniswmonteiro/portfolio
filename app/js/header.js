@@ -44,13 +44,12 @@ function setLinkActive() {
         const itemMenu = document.querySelector(`#dm-header-menu a[href="#${sectionId}"]`);
         const scrollTop = window.scrollY;
         const scrollTopAnimateSection = scrollTop + (window.innerHeight * .55);
-        const scrollTopSectionActive = scrollTop;
 
         if ((sectionOffsetTop - headerHeight) < scrollTopAnimateSection && ((sectionOffsetTop - headerHeight + sectionHeight)) > scrollTopAnimateSection) {
             section.classList.add("anime-left");
         }
 
-        if ((sectionOffsetTop - headerHeight) < scrollTop && ((sectionOffsetTop - headerHeight + sectionHeight)) > scrollTopSectionActive) {
+        if ((sectionOffsetTop - headerHeight) < scrollTop && ((sectionOffsetTop - headerHeight + sectionHeight)) > scrollTop) {
             itemMenu.classList.add("link-active");
             section.classList.add("section-active");
         }
