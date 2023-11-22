@@ -33,18 +33,18 @@ window.scrollToSection = function (el) {
 }
 
 /** Mutation observer */
-const skillFrontEnd = document.querySelector("#dm-about");
+const aboutSection = document.querySelector("#dm-about");
 const observer = new MutationObserver(handleMutation);
 
-observer.observe(skillFrontEnd, {
+observer.observe(aboutSection, {
     attributes: true
 });
 
 function handleMutation(mutation) {
-    const skillFrontEnd = document.querySelector("#dm-pills-front-tab");
+    const pillsTab = document.querySelector("#dm-pills-front-tab");
 
     if (mutation[0].target.classList.contains("section-active")) {
+        window.animateSkills(pillsTab);
         observer.disconnect();
-        window.animateSkills(skillFrontEnd);
     }
 }

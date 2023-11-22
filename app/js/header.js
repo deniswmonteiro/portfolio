@@ -43,15 +43,21 @@ function setLinkActive() {
         const sectionOffsetTop = section.offsetTop;
         const itemMenu = document.querySelector(`#dm-header-menu a[href="#${sectionId}"]`);
         const scrollTop = window.scrollY;
+        const scrollTopAnimateSection = scrollTop + (window.innerHeight * .55);
+        const scrollTopSectionActive = scrollTop;
 
-        if ((sectionOffsetTop - headerHeight) < scrollTop && ((sectionOffsetTop - headerHeight + sectionHeight)) > scrollTop) {
+        if ((sectionOffsetTop - headerHeight) < scrollTopAnimateSection && ((sectionOffsetTop - headerHeight + sectionHeight)) > scrollTopAnimateSection) {
+            section.classList.add("anime-left");
+        }
+
+        if ((sectionOffsetTop - headerHeight) < scrollTop && ((sectionOffsetTop - headerHeight + sectionHeight)) > scrollTopSectionActive) {
             itemMenu.classList.add("link-active");
             section.classList.add("section-active");
         }
 
-        else {
-            itemMenu.classList.remove("link-active");
+        else if (section.classList.contains("section-active")) {
             section.classList.remove("section-active");
+            itemMenu.classList.remove("link-active");
         }
     });
 }
