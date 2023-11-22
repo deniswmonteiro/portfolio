@@ -68,7 +68,7 @@
                             </a>
                         </li>
                         <li class="nav-item ms-2 me-2">
-                            <a class="nav-link text-uppercase ps-2 pe-2" href="#dm-portfolio"
+                            <a class="nav-link text-uppercase ps-2 pe-2" href="#dm-projects"
                                 onclick="return event.preventDefault(), window.changeTitle(this), window.linkCloseMenuMobile(), window.scrollToSection(this)">
                                 Portfólio
                             </a>
@@ -410,6 +410,24 @@
                 </div>
                 <div class="col-12 col-xxl-8 offset-xxl-1 pt-4">
                     <div class="row">
+                        <!-- UFPA -->
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="card dm-education-card">
+                                <div class="card-body p-5 dm-card-body">
+                                    <h5 class="card-title text-uppercase d-flex dm-card-title mb-3">
+                                        Bacharelado (interrompido)
+                                    </h5>
+                                    <p class="fw-bold mb-2">
+                                        Engenharia da Computação
+                                    </p>
+                                    <p class="fw-bold mb-4">
+                                        2010-2019
+                                    </p>
+                                    <span>Universidade Federal do Pará</span>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- SEDUC -->
                         <div class="col-12 col-md-6 mb-4">
                             <div class="card dm-education-card">
@@ -417,10 +435,13 @@
                                     <h5 class="card-title text-uppercase d-flex dm-card-title mb-3">
                                         Técnico
                                     </h5>
-                                    <p class="fw-bold mb-4">
+                                    <p class="fw-bold mb-2">
                                         Informática
                                     </p>
-                                    <span>SEDUC/PA</span>
+                                    <p class="fw-bold mb-4">
+                                        2019-2021
+                                    </p>
+                                    <span>Secretaria de Educação/PA</span>
                                 </div>
                             </div>
                         </div>
@@ -441,6 +462,10 @@
                                             <li class="mb-3">TypeScript</li>
                                             <li>UI Design</li>
                                         </ul>
+                                        <ul class="fw-bold dm-list-courses">
+                                            <li class="mb-3">ReactJS</li>
+                                            <li>UX Design</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -451,12 +476,12 @@
         </div>
     </section>
 
-    <!-- Portfolio -->
-    <section class="dm-section" id="dm-portfolio">
+    <!-- Projects -->
+    <section class="dm-section" id="dm-projects">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-xxl-3 mb-4">
-                    <h2 class="text-uppercase fw-bold dm-title-2">Portfólio</h2>
+                    <h2 class="text-uppercase fw-bold dm-title-2">Projetos</h2>
                 </div>
                 <div class="col-12 col-xxl-8 offset-xxl-1 pt-4">
                     <p class="dm-text">
@@ -464,18 +489,17 @@
                         <span class="fw-bold dm-text-bold">responsivos</span>, com conteúdo que se adapta ao tamanho da tela de <span class="fw-bold dm-text-bold">tablets</span> e <span class="fw-bold dm-text-bold">smartphones</span>, e com o layout criado para atender ao propósito do projeto.
                     </p>
                     
-                    <!-- COLOCAR NUM CARROSSEL -->
-                    <div class="row dm-portfolio-content">
+                    <div class="row dm-projects-content">
                         <!-- Sunny House -->
                         <div class="col-12 col-md-6 col-xl-4 mb-4">
-                            <div class="card border-0 mt-0 dm-portfolio-card dm-card-sunnyhouse" id="dm-card-sunnyhouse"
+                            <div class="card border-0 mt-0 dm-projects-card dm-card-sunnyhouse" id="dm-card-sunnyhouse"
                                 onmouseover="return window.changeProjectToBackground(this)"
                                 onmouseout="return window.changeProjectToImage(this)">
                                 <figure class="card-body d-flex justify-content-center p-4">
-                                    <img src="./img/portfolio/sunnyhouse/logo-sunny-house.svg"
+                                    <img src="./img/projects/sunnyhouse/logo-sunny-house.svg"
                                         alt="Logo da Sunny House">
 
-                                    <figcaption class="text-center dm-portfolio-info">
+                                    <figcaption class="text-center dm-projects-info">
                                         <p>
                                             Sistema de gerenciamento de contratos de instalação de painéis fotovoltáicos.
                                         </p>
@@ -492,13 +516,13 @@
 
                         <!-- SAIR -->
                         <div class="col-12 col-md-6 col-xl-4 mb-4">
-                            <div class="card border-0 mt-0 dm-portfolio-card dm-card-sair" id="dm-card-sair"
+                            <div class="card border-0 mt-0 dm-projects-card dm-card-sair" id="dm-card-sair"
                                 onmouseover="return window.changeProjectToBackground(this)"
                                 onmouseout="return window.changeProjectToImage(this)">
                                 <figure class="card-body d-flex justify-content-center p-4">
-                                    <img src="./img/portfolio/sair/logo-sair.svg" alt="Logo do SAIR">
+                                    <img src="./img/projects/sair/logo-sair.svg" alt="Logo do SAIR">
 
-                                    <figcaption class="text-center dm-portfolio-info">
+                                    <figcaption class="text-center dm-projects-info">
                                         <p>
                                             Aplicativo Web criado para controlar sistema elétrico automatizado.
                                         </p>
@@ -514,13 +538,13 @@
 
                         <!-- SISGEE -->
                         <div class="col-12 col-md-6 col-xl-4">
-                            <div class="card border-0 mt-0 dm-portfolio-card dm-card-sisgee" id="dm-card-sisgee"
+                            <div class="card border-0 mt-0 dm-projects-card dm-card-sisgee" id="dm-card-sisgee"
                                 onmouseover="return window.changeProjectToBackground(this)"
                                 onmouseout="return window.changeProjectToImage(this)">
                                 <figure class="card-body d-flex justify-content-center p-4">
-                                    <img src="./img/portfolio/sisgee/logo-sisgee.svg" alt="Logo do SISGEE">
+                                    <img src="./img/projects/sisgee/logo-sisgee.svg" alt="Logo do SISGEE">
                                     
-                                    <figcaption class="text-center dm-portfolio-info">
+                                    <figcaption class="text-center dm-projects-info">
                                         <p>
                                             Aplicativo Web criado para gerenciar sistema de energia elétrica.
                                         </p>
@@ -561,13 +585,13 @@
                     <div class="row">
                         <div class="col-12 col-xl-9">
                             <figure class="figure">
-                                <img src="./img/portfolio/sunnyhouse/img-sh-1.jpg" alt="..."
+                                <img src="./img/projects/sunnyhouse/img-sh-1.jpg" alt="..."
                                     class="figure-img img-fluid rounded">
                             </figure>
                         </div>
                         <div class="col-6 col-xl-3">
                             <figure class="figure">
-                                <img src="./img/portfolio/sunnyhouse/img-sh-2.jpg" alt="..."
+                                <img src="./img/projects/sunnyhouse/img-sh-2.jpg" alt="..."
                                 class="figure-img img-fluid rounded">
                             </figure>
                         </div>
@@ -575,13 +599,13 @@
                     <div class="row">
                         <div class="col-12 col-xl-9">
                             <figure class="figure">
-                                <img src="./img/portfolio/sunnyhouse/img-sh-3.jpg" alt="..."
+                                <img src="./img/projects/sunnyhouse/img-sh-3.jpg" alt="..."
                                 class="figure-img img-fluid rounded">
                             </figure>
                         </div>
                         <div class="col-6 col-xl-3">
                             <figure class="figure">
-                                <img src="./img/portfolio/sunnyhouse/img-sh-4.jpg" alt="..."
+                                <img src="./img/projects/sunnyhouse/img-sh-4.jpg" alt="..."
                                 class="figure-img img-fluid rounded">
                             </figure>
                         </div>
@@ -611,14 +635,14 @@
                     <div class="row">
                         <div class="col-12 col-xl-8">
                             <figure class="figure">
-                                <img src="./img/portfolio/sisgee/img-sisgee-1.jpg" alt="..."
+                                <img src="./img/projects/sisgee/img-sisgee-1.jpg" alt="..."
 
                                     class="figure-img img-fluid rounded">
                             </figure>
                         </div>
                         <div class="col-6 col-xl-4">
                             <figure class="figure">
-                                <img src="./img/portfolio/sisgee/img-sisgee-2.jpg" alt="..."
+                                <img src="./img/projects/sisgee/img-sisgee-2.jpg" alt="..."
                                 class="figure-img img-fluid rounded">
                             </figure>
                         </div>
@@ -626,13 +650,13 @@
                     <div class="row">
                         <div class="col-12 col-xl-9">
                             <figure class="figure">
-                                <img src="./img/portfolio/sisgee/img-sisgee-3.jpg" alt="..."
+                                <img src="./img/projects/sisgee/img-sisgee-3.jpg" alt="..."
                                 class="figure-img img-fluid rounded">
                             </figure>
                         </div>
                         <div class="col-6 col-xl-3">
                             <figure class="figure">
-                                <img src="./img/portfolio/sisgee/img-sisgee-4.jpg" alt="..."
+                                <img src="./img/projects/sisgee/img-sisgee-4.jpg" alt="..."
                                 class="figure-img img-fluid rounded">
                             </figure>
                         </div>
@@ -661,14 +685,14 @@
                                     </h5>
 
                                     <div class="row">
-                                        <div class="col-12 col-md-7 col-xl-8">
+                                        <div class="col-12 col-md-7">
                                             <p class="dm-text">
                                                 Criação de sites pessoais, institucionais e comerciais com páginas responsivas e layout customizado.
                                             </p>
                                         </div>
 
                                         <!-- ANIMAR ITENS COM SCALE NO BG -->
-                                        <div class="col-12 col-md-5 col-xl-4 d-flex align-items-start dm-services-tech">
+                                        <div class="col-12 col-md-5 d-flex flex-wrap align-items-start dm-services-tech">
                                             <span class="badge fw-normal">
                                                 HTML
                                             </span>
@@ -677,6 +701,15 @@
                                             </span>
                                             <span class="badge fw-normal">
                                                 JavaScript
+                                            </span>
+                                            <span class="badge fw-normal">
+                                                ReactJS
+                                            </span>
+                                            <span class="badge fw-normal">
+                                                NextJS
+                                            </span>
+                                            <span class="badge fw-normal">
+                                                TypeScript
                                             </span>
                                         </div>
                                     </div>
@@ -694,13 +727,13 @@
                                     </h5>
 
                                     <div class="row">
-                                        <div class="col-12 col-md-7 col-xl-8">
+                                        <div class="col-12 col-md-7">
                                             <p class="dm-text">
                                                 Criação de sistemas Web customizados com comunicação via internet desenvolvidos de acordo com a necessidade do projeto.
                                             </p>
                                         </div>
 
-                                        <div class="col-12 col-md-5 col-xl-4 d-flex flex-wrap align-items-start dm-services-tech">
+                                        <div class="col-12 col-md-5 d-flex flex-wrap align-items-start dm-services-tech">
                                             <span class="badge fw-normal">
                                                 HTML
                                             </span>
@@ -715,6 +748,9 @@
                                             </span>
                                             <span class="badge fw-normal">
                                                 Laravel
+                                            </span>
+                                            <span class="badge fw-normal">
+                                                Banco de Dados
                                             </span>
                                         </div>
                                     </div>

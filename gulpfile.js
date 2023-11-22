@@ -31,7 +31,7 @@ function js() {
             "app/js/header.js",
             "app/js/introduction.js",
             "app/js/about.js",
-            "app/js/portfolio.js"
+            "app/js/projects.js"
         ])
         .pipe(concat("app.js"))
         .pipe(babel({

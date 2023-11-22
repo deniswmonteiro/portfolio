@@ -1,13 +1,13 @@
-#dm-portfolio {
+#dm-projects {
     padding-top: 9rem;
     padding-bottom: 9rem;
 }
 
-.dm-portfolio-content {
+.dm-projects-content {
     margin-top: 3.75rem;
 }
 
-.dm-portfolio-card {
+.dm-projects-card {
     font-size: 1.25rem;
     line-height: 1.4;
     color: var(--gray-1);
@@ -15,28 +15,29 @@
     transition: .3s ease-out;
 }
 
-.dm-portfolio-info {
+.dm-projects-info {
     display: none;
 }
 
-.dm-portfolio-info.dm-portfolio-active {
+.dm-projects-info.dm-projects-active {
     display: block;
     opacity: 0;
-    animation: showPortfolioInfo .8s forwards;
+    animation: showProjectsInfo .8s forwards;
 }
 
-@keyframes showPortfolioInfo {
+@keyframes showProjectsInfo {
    to {
         opacity: 1;
     }
 }
 
-.dm-portfolio-info .dm-btn-outline-blue-1 {
+.dm-projects-info .dm-btn-outline-blue-1 {
     font-size: .875rem !important;
 }
 
-.dm-portfolio-info p {
+.dm-projects-info p {
     min-height: 7rem;
+    font-size: 1.2rem;
 }
 
 .dm-card-sunnyhouse {
@@ -51,11 +52,11 @@
     background-color: var(--blue);
 }
 
-.dm-portfolio-card {
+.dm-projects-card {
     transition: .3s ease-out;
 }
 
-.dm-portfolio-card:hover {
+.dm-projects-card:hover {
     background-color: var(--black-3);
     transition: .3s ease-in;
 }
@@ -66,19 +67,19 @@
 }
 
 @media screen and (max-width: 767px) {
-    #dm-portfolio {
+    #dm-projects {
         padding-top: 6.75rem;
         padding-bottom: 6.75rem;
     }
 }
 
 @media screen and (max-width: 575px) {
-    #dm-portfolio {
+    #dm-projects {
         padding-top: 4.5rem;
         padding-bottom: 4.5rem;
     }
 
-    .dm-portfolio-info .dm-btn-outline-blue-1 {
+    .dm-projects-info .dm-btn-outline-blue-1 {
         font-size: 1rem !important;
     }
 }
