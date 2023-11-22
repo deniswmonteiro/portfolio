@@ -9,7 +9,6 @@
 
 .dm-about-card {
     min-height: 25.813rem;
-    margin-top: 3.75rem;
     background-color: var(--gray-1);
     border-color: var(--gray-2);
 }
@@ -53,12 +52,6 @@
     }
 }
 
-@media screen and (max-width: 1399px) {
-    .dm-about-card {
-        margin-top: 3.75rem;
-    }
-}
-
 @media screen and (max-width: 991px) {
     .dm-about-card {
         min-height: 22.5rem;
@@ -80,10 +73,6 @@
     #dm-about {
         padding-top: 4.5rem;
         padding-bottom: 4.5rem;
-    }
-
-    .dm-about-card {
-        margin-top: 3rem;
     }
 
     .dm-nav-link {

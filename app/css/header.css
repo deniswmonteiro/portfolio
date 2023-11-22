@@ -51,7 +51,8 @@
 }
 
 #dm-header #dm-header-menu a {
-    font-size: 1.125em !important;
+    font-family: var(--font-1) !important;
+    font-size: .875rem !important;
     line-height: 1.4;
     color: var(--gray-1);
     min-height: .063rem;

@@ -1,7 +1,8 @@
 /** VARIABLES */
 * {
     /** Font */
-    --font: "Fira Sans", Helvetica, Arial, sans-serif;
+    --font-1: "Fira Sans", Helvetica, Arial, sans-serif;
+	--font-2: "TT Lakes", Helvetica, Arial, sans-serif;
 	
     /** Colors */
     --gray-1: #FAFAFA;

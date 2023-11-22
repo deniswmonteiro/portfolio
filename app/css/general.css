@@ -38,20 +38,23 @@
 }
 
 .dm-title-1 {
+    font-family: var(--font-2) !important;
     font-size: 4rem;
     line-height: 1.3;
     color: var(--gray-1);
 }
 
 .dm-title-2 {
-    font-size: 6.875rem;
+    font-family: var(--font-2) !important;
+    font-size: 6rem;
     line-height: 1.1;
     color: var(--gray-2);
     word-wrap: break-word;
 }
 
 .dm-title-3 {
-    font-size: 3rem;
+    font-family: var(--font-2) !important;
+    font-size: 2.8rem;
     line-height: 1.1;
     color: var(--gray-4);
 }
@@ -216,7 +219,7 @@
 
 @media screen and (max-width: 767px) {
     .dm-title-2 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 }
 
@@ -227,7 +230,7 @@
     }
 
     .dm-title-2 {
-        font-size: 3.4375rem;
+        font-size: 3rem;
     }
 
     .dm-title-3 {
