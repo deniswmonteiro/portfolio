@@ -14,6 +14,23 @@
     color: var(--gray-2);
 }
 
+.dm-intro-social-medias a {
+    text-decoration: none;
+}
+
+.dm-intro-social-medias a:hover i {
+    color: var(--purple-1);
+    transition: .3s;
+}
+
+.dm-intro-social-medias a i {
+    font-size: 1.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    color: var(--gray-2);
+    transition: .3s;
+}
+
 .dm-illustration {
     right: 0;
 }

@@ -109,7 +109,8 @@
     transition: .3s ease-in-out;
 }
 
-.dm-btn-outline-blue-1:focus {
+.dm-btn-outline-blue-1:focus,
+.dm-btn-outline-blue-2:focus {
     outline: none;
     box-shadow: none;
 }
@@ -117,6 +118,20 @@
 .dm-btn-outline-blue-1:hover {
     color: var(--black-3);
     background-color: var(--purple-1);
+    transition: .3s ease-in-out;
+}
+
+.dm-btn-outline-blue-2 {
+    font-size: 1rem !important;
+    line-height: 1.4;
+    color: var(--purple-3);
+    border-color: var(--purple-3);
+    transition: .3s ease-in-out;
+}
+
+.dm-btn-outline-blue-2:hover {
+    color: var(--gray-1);
+    background-color: var(--purple-3);
     transition: .3s ease-in-out;
 }
 
