@@ -4,7 +4,7 @@
 }
 
 #dm-about .dm-title-2 {
-    color: var(--gray-3);
+    color: var(--gray-2);
 }
 
 .dm-about-card {
@@ -15,36 +15,36 @@
 }
 
 #dm-about .dm-card-title {
-    color: var(--gray-10);
+    color: var(--black-1);
 }
 
 .dm-nav-link {
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.4;
-    color: var(--gray-13);
+    color: var(--black-3);
 }
 
 .dm-nav-link:hover {
-    color: var(--blue-6);
+    color: var(--purple-2);
 }
 
 .dm-nav-link.active {
-    background-color: var(--blue-6) !important;
+    background-color: var(--purple-2) !important;
     color: var(--gray-1) !important;
 }
 
 .dm-skill-content p {
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.4;
 }
 
 .dm-skill-content .dm-progress {
-    background-color: var(--gray-3) !important;
+    background-color: var(--gray-2) !important;
 }
 
 .dm-skill-content .dm-progress-bar {
     width: 0%;
-    background-color: var(--blue-1) !important;
+    background-color: var(--purple-1) !important;
 }
 
 @media screen and (max-width: 1399px) {

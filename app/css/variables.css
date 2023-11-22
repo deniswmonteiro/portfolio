@@ -5,19 +5,17 @@
 	
     /** Colors */
     --gray-1: #FAFAFA;
-    --gray-2: #F0F0F0;
-	--gray-3: #E0E0E0;
-	--gray-4: #CCC;
-	--gray-8: #7A7A7A;
-	--gray-10: #525252;
-	--gray-11: #3D3D3D;
-	--gray-12: #292929;
-	--gray-13: #141414;
-	--blue-1: #BEBEFF;
-	--blue-6: #5C5CCC;
-	--blue-11: #2E2E66;
+	--gray-2: #E0E0E0;
+	--gray-3: #CCC;
+	--gray-4: #7A7A7A;
+	--black-1: #525252;
+	--black-2: #3D3D3D;
+	--black-3: #141414;
+	--purple-1: #BEBEFF;
+	--purple-2: #5C5CCC;
+	--purple-3: #2E2E66;
     --orange: #FF8C00;
     --green: #5d7;
-	--dark-blue: #1A237E;
-    --gradient: linear-gradient(to right bottom, var(--blue-11), var(--blue-6));
+	--blue: #1A237E;
+    --gradient: linear-gradient(to right bottom, var(--purple-3), var(--purple-2));
 }

@@ -7,8 +7,8 @@
     margin-top: 3.75rem;
 }
 
-.dm-card-sunnyhouse, .dm-card-sair, .dm-card-sisgee {
-    font-size: 20px;
+.dm-portfolio-card {
+    font-size: 1.25rem;
     line-height: 1.4;
     color: var(--gray-1);
     min-height: 15.625rem;
@@ -21,21 +21,18 @@
 
 .dm-portfolio-info.dm-portfolio-active {
     display: block;
+    opacity: 0;
     animation: showPortfolioInfo .8s forwards;
 }
 
 @keyframes showPortfolioInfo {
-    from {
-        opacity: 0;
-    }
-
-    to {
+   to {
         opacity: 1;
     }
 }
 
-.dm-portfolio-info .dm-btn-outline-blue {
-    font-size: .9em !important;
+.dm-portfolio-info .dm-btn-outline-blue-1 {
+    font-size: .875rem !important;
 }
 
 .dm-portfolio-info p {
@@ -43,23 +40,28 @@
 }
 
 .dm-card-sunnyhouse {
-    background: var(--orange)
+    background-color: var(--orange);
 }
 
 .dm-card-sair {
-    background: var(--green);
+    background-color: var(--green);
 }
 
 .dm-card-sisgee {
-    background: var(--dark-blue);
+    background-color: var(--blue);
 }
 
-.dm-card-sunnyhouse:hover, .dm-card-sair:hover, .dm-card-sisgee:hover {
-    background: var(--gray-13);
+.dm-portfolio-card {
+    transition: .3s ease-out;
+}
+
+.dm-portfolio-card:hover {
+    background-color: var(--black-3);
     transition: .3s ease-in;
 }
 
-#dm-modal-sunnyhouse img, #dm-modal-sisgee img {
+#dm-modal-sunnyhouse img,
+#dm-modal-sisgee img {
     box-shadow: 0 1px 2px rgba(20, 20, 20, .1), 0 4px 8px rgba(20, 20, 20, .2);
 }
 
@@ -76,7 +78,7 @@
         padding-bottom: 4.5rem;
     }
 
-    .dm-portfolio-info .dm-btn-outline-blue {
-        font-size: 1em !important;
+    .dm-portfolio-info .dm-btn-outline-blue-1 {
+        font-size: 1rem !important;
     }
 }

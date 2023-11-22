@@ -9,13 +9,13 @@
     position: fixed;
     clear: both;
     width: 100%;
-    min-height: 0.063rem;;
+    min-height: .063rem;;
     z-index: 1000;
     transition: .3s ease-out;
 }
 
 #dm-header.menu-bg {
-    background: var(--blue-6);
+    background-color: var(--purple-2);
     box-shadow: 0 1px 2px rgba(20, 20, 20, .1), 0 4px 8px rgba(20, 20, 20, .2);
     transition: .3s ease-in;
 }
@@ -54,23 +54,23 @@
     font-size: 1.125em !important;
     line-height: 1.4;
     color: var(--gray-1);
-    min-height: 0.063rem;
+    min-height: .063rem;
     display: inline-block;
 }
 
 #dm-header-menu a:not(#dm-header-contact):hover {
-    color: var(--blue-1) !important;
+    color: var(--purple-1) !important;
 }
 
 #dm-header-menu a#dm-header-contact:hover {
-    color: var(--gray-13) !important;
+    color: var(--black-3) !important;
 }
 
 #dm-header-menu a:not(#dm-header-contact)::after {
     content: "";
     display: block;
-    background: var(--blue-1);
-    height: 0.125rem;
+    background-color: var(--purple-1);
+    height: .125rem;
     width: 0;
     transition: .3s ease-in;
   }
@@ -80,14 +80,14 @@
 }
 
 #dm-header-menu a:not(#dm-header-contact).link-active {
-    color: var(--blue-1) !important;
+    color: var(--purple-1) !important;
 }
 
 #dm-header-menu a.link-active:not(#dm-header-contact)::after {
     content: "";
     display: block;
-    background: var(--blue-1);
-    height: 0.125rem;
+    background-color: var(--purple-1);
+    height: .125rem;
     width: 100%;
     transition: .3s ease-out;
 }
@@ -123,7 +123,7 @@
         height: 0;
         top: 6.063rem;
         right: 0;
-        background: var(--blue-11);
+        background-color: var(--purple-3);
         z-index: 1000;
         visibility: hidden;
         overflow-y: hidden;
@@ -179,9 +179,9 @@
         width: 1.25rem;
         height: 0.125rem;
         background: currentColor;
-        margin-top: 0.375rem;
+        margin-top: .375rem;
         position: relative;
-        border-radius: 4px;
+        border-radius: .25rem;
         transition: .3s ease-in;
     }
 
@@ -191,13 +191,13 @@
 
     #btn-mobile.active #icon-hamburger::before {
         transform: rotate(135deg);
-        background: var(--blue-1);
+        background-color: var(--purple-1);
     }
 
     #btn-mobile.active #icon-hamburger::after {
         transform: rotate(-135deg);
         top: -.5rem;
-        background: var(--blue-1);
+        background-color: var(--purple-1);
     }
 }
 

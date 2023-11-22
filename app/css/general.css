@@ -9,22 +9,22 @@
 /* Works on Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--blue-1);
+    scrollbar-color: var(--purple-1);
 }
   
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: 0.625rem;
+    width: .625rem;
 }
   
 *::-webkit-scrollbar-track {
-    background: var(--blue-1);
+    background-color: var(--purple-1);
 }
   
 *::-webkit-scrollbar-thumb {
     background: var(--gradient);
-    border-radius: 20px;
-    border: 3px solid var(--blue-1);
+    border-radius: 1.25rem;
+    border: 3px solid var(--purple-1);
 }
 /** ----------------------------------- */
 
@@ -38,85 +38,85 @@
 }
 
 .dm-title-1 {
-    font-size: 4em;
+    font-size: 4rem;
     line-height: 1.3;
     color: var(--gray-1);
 }
 
 .dm-title-2 {
-    font-size: 6.875em;
+    font-size: 6.875rem;
     line-height: 1.1;
-    color: var(--gray-3);
+    color: var(--gray-2);
     word-wrap: break-word;
 }
 
 .dm-title-3 {
-    font-size: 3em;
+    font-size: 3rem;
     line-height: 1.1;
-    color: var(--gray-8);
+    color: var(--gray-4);
 }
 
 .dm-title-4 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 1.4;
-    color: var(--gray-10) !important;
+    color: var(--black-1) !important;
 }
 
 .dm-text {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 1.4;
-    color: var(--gray-10);
+    color: var(--black-1);
 }
 
 .dm-text-bold {
-    color: var(--blue-11);
+    color: var(--purple-3);
 }
 
 .dm-card-title {
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 1.4;
 }
 
 .dm-card-title::before {
     content: "";
-    width: 0.313rem;
+    width: .313rem;
     height: 1.25rem;
     display: inline-block;
-    background: var(--blue-6);
-    border-radius: 4px;
+    background: var(--purple-2);
+    border-radius: .25rem;
     position: absolute;
-    left: -3px;
+    left: -.1875rem;
 }
 
 .dm-card-title-icon {
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 1.4;
 }
 
 .dm-card-title-icon i {
     display: inline-block;
     position: absolute;
-    left: -12px;
-    font-size: 1.375em;
-    color: var(--blue-6);
+    left: -.75rem;
+    font-size: 1.375rem;
+    color: var(--purple-2);
 }
 
-.dm-btn-outline-blue {
-    font-size: 1.25em !important;
+.dm-btn-outline-blue-1 {
+    font-size: 1.25rem !important;
     line-height: 1.4;
-    color: var(--blue-1);
-    border-color: var(--blue-1);
+    color: var(--purple-1);
+    border-color: var(--purple-1);
     transition: .3s ease-in-out;
 }
 
-.dm-btn-outline-blue:focus {
+.dm-btn-outline-blue-1:focus {
     outline: none;
     box-shadow: none;
 }
 
-.dm-btn-outline-blue:hover {
-    color: var(--gray-13);
-    background-color: var(--blue-1);
+.dm-btn-outline-blue-1:hover {
+    color: var(--black-3);
+    background-color: var(--purple-1);
     transition: .3s ease-in-out;
 }
 
@@ -148,13 +148,13 @@
 }
 
 .pace .pace-progress {
-    background: var(--blue-1);
+    background: var(--purple-1);
     position: fixed;
     z-index: 2000;
     top: 0;
     right: 100%;
     width: 100%;
-    height: 0.188rem;
+    height: .188rem;
 }
 
 /** Header progress */
@@ -167,21 +167,21 @@
 
 #dm-header-progress {
     width: 100%;
-    height: 0.313rem;
+    height: .313rem;
 }
 
 #dm-header-progress-bar {
-    height: 0.313rem;
-    background: var(--blue-1);
+    height: .313rem;
+    background: var(--purple-1);
     width: 0%;
 }
 
 .dm-modal-header {
-    background: var(--gray-13);
+    background-color: var(--black-3);
 }
 
 .btn-close-modal {
-    background-color: var(--blue-1);
+    background-color: var(--purple-1);
     transition: .3s ease-out;
 }
 
@@ -190,7 +190,7 @@
 }
 
 .dm-modal-body {
-    background: var(--gray-1);
+    background-color: var(--gray-1);
 }
 
 @media screen and (max-width: 991px) {
@@ -201,26 +201,26 @@
 
 @media screen and (max-width: 767px) {
     .dm-title-2 {
-        font-size: 6em;
+        font-size: 6rem;
     }
 }
 
 @media screen and (max-width: 575px) {
     .dm-title-1 {
-        font-size: 2em;
+        font-size: 2rem;
         line-height: 1.3;
     }
 
     .dm-title-2 {
-        font-size: 3.4375em;
+        font-size: 3.4375rem;
     }
 
     .dm-title-3 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
-    .dm-btn-outline-blue {
-        font-size: 1.125em !important;
+    .dm-btn-outline-blue-1 {
+        font-size: 1.125rem !important;
         display: block;
     }
 }

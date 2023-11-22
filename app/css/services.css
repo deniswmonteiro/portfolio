@@ -1,11 +1,11 @@
 #dm-services {
     padding-top: 9rem;
     padding-bottom: 9rem;
-    background: var(--gray-1);
+    background-color: var(--gray-1);
 }
 
 #dm-services .dm-title-2 {
-    color: var(--gray-4);
+    color: var(--gray-3);
 }
 
 .dm-services-card {
@@ -19,11 +19,11 @@
 }
 
 #dm-services .dm-card-title-icon {
-    color: var(--gray-10);
+    color: var(--black-1);
 }
 
 .dm-services-card .dm-text {
-    color: var(--gray-13);
+    color: var(--black-3);
 }
 
 .dm-services-tech {
@@ -31,10 +31,10 @@
 }
 
 .dm-services-tech span {
-    font-size: 1em;
+    font-size: 1rem;
     line-height: 1.4;
-    background: var(--blue-1);
-    color: var(--gray-13);
+    background-color: var(--purple-1);
+    color: var(--black-3);
 }
 
 @media screen and (max-width: 1399px) {
@@ -48,8 +48,6 @@
         padding-top: 6.75rem;
         padding-bottom: 6.75rem;
     }
-
-    
 
     .dm-card-lg {
         min-height: 13.75rem;

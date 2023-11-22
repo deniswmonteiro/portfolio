@@ -1,17 +1,17 @@
 #dm-intro {
-    padding-top: 34px;
-    padding-bottom: 265px;
+    padding-top: 2.125rem;
+    padding-bottom: 16.5625rem;
 }
 
 .dm-intro-content {
-    padding-top: 160px;
-    padding-bottom: 60px;
+    padding-top: 10rem;
+    padding-bottom: 3.75rem;
 }
 
 .dm-subtitle {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 1.4;
-    color: var(--gray-3);
+    color: var(--gray-2);
 }
 
 .dm-illustration {
@@ -19,22 +19,15 @@
 }
 
 @media screen and (max-width: 575px) {
-    #dm-intro {
-        padding-top: 34px;
-        padding-bottom: 265px;
-    }
-    
     .dm-intro-content {
-        padding-top: 100px;
-        padding-bottom: 60px;
+        padding-top: 6.25rem;
     }
 
     .dm-subtitle {
-        font-size: 1.25em;
+        font-size: 1.25rem;
     }
 
     .dm-illustration {
-        right: 0px;
         bottom: 36px;
     }
 }

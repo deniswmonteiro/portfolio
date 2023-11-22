@@ -1,40 +1,39 @@
 #dm-education {
     padding-top: 9rem;
     padding-bottom: 9rem;
-    background: var(--gray-13);
+    background-color: var(--black-3);
 }
 
 #dm-education .dm-title-2 {
-    color: var(--gray-10);
+    color: var(--black-1);
 }
 
 .dm-education-card {
-    background-color: var(--gray-11);
-    border-color: var(--gray-12);
+    background-color: var(--black-2);
 }
 
 #dm-education .dm-card-title {
-    color: var(--gray-8);
+    color: var(--gray-4);
 }
 
 #dm-education .dm-card-title-icon {
-    color: var(--gray-8);
+    color: var(--gray-4);
 }
 
 #dm-education p {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 1.4;
     color: var(--gray-1);
 }
 
 #dm-education span {
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 1.4;
-    color: var(--gray-4);
+    color: var(--gray-3);
 }
 
 .dm-list-courses {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     color: var(--gray-1);
 }
 
