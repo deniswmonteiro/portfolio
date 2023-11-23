@@ -18,5 +18,7 @@
     --orange: #FF8C00;
     --green: #5d7;
 	--blue: #1A237E;
+	--tomato: #FF6644;
+	--red: #E4003B;
     --gradient: linear-gradient(to right bottom, var(--purple-3), var(--purple-2));
 }

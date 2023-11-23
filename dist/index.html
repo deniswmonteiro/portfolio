@@ -520,15 +520,17 @@
                                 onmouseover="return window.changeProjectToBackground(this)"
                                 onmouseout="return window.changeProjectToImage(this)">
                                 <figure class="card-body d-flex justify-content-center p-4">
-                                    <img src="./img/projects/sair/logo-sair.svg" alt="Logo do SAIR">
+                                    <img src="./img/projects/sair/logo-sair.svg"
+                                        alt="Logo SAIR">
 
                                     <figcaption class="text-center dm-projects-info">
                                         <p>
                                             Aplicativo Web criado para controlar sistema elétrico automatizado.
                                         </p>
-                                        <a href="https://projetoceamazon.herokuapp.com" target="_blank"
-                                            class="btn btn-lg text-uppercase mt-4 dm-btn-outline-blue-1">
-                                            Visitar Site
+                                        <a class="btn btn-lg text-uppercase mt-4 dm-btn-outline-blue-1"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#dm-modal-sair">
+                                            Ver Imagens
                                             <i class="bi bi-chevron-right ms-2"></i>
                                         </a>
                                     </figcaption>
@@ -537,7 +539,7 @@
                         </div>
 
                         <!-- SISGEE -->
-                        <div class="col-12 col-md-6 col-xl-4">
+                        <div class="col-12 col-md-6 col-xl-4 mb-4">
                             <div class="card border-0 mt-0 dm-projects-card dm-card-sisgee" id="dm-card-sisgee"
                                 onmouseover="return window.changeProjectToBackground(this)"
                                 onmouseout="return window.changeProjectToImage(this)">
@@ -552,6 +554,52 @@
                                             data-bs-toggle="modal"
                                             data-bs-target="#dm-modal-sisgee">
                                             Ver Imagens
+                                            <i class="bi bi-chevron-right ms-2"></i>
+                                        </a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <!-- Fitness Protocol -->
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="card border-0 mt-0 dm-projects-card dm-card-fitness" id="dm-card-fitness"
+                                onmouseover="return window.changeProjectToBackground(this)"
+                                onmouseout="return window.changeProjectToImage(this)">
+                                <figure class="card-body d-flex justify-content-center p-4">
+                                    <img src="./img/projects/fitnessprotocol/logo-fitness-protocol.svg"
+                                        alt="Logo da Fitness Protocol">
+
+                                    <figcaption class="text-center dm-projects-info">
+                                        <p>
+                                            App baseado nos planos de treinos da Iridium Academy.
+                                        </p>
+                                        <a href="https://fitnessprotocol.vercel.app/" target="_blank"
+                                            class="btn btn-lg text-uppercase mt-4 dm-btn-outline-blue-1">
+                                            Visitar Site
+                                            <i class="bi bi-chevron-right ms-2"></i>
+                                        </a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <!-- Adventure -->
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="card border-0 mt-0 dm-projects-card dm-card-adventure" id="dm-card-adventure"
+                                onmouseover="return window.changeProjectToBackground(this)"
+                                onmouseout="return window.changeProjectToImage(this)">
+                                <figure class="card-body d-flex justify-content-center p-4">
+                                    <img src="./img/projects/adventure/logo-adventure.svg"
+                                        alt="Logo da Adventure">
+
+                                    <figcaption class="text-center dm-projects-info">
+                                        <p>
+                                            Página web desenvolvida como teste de habilidade.
+                                        </p>
+                                        <a href="https://deniswmonteiro.github.io/" target="_blank"
+                                            class="btn btn-lg text-uppercase mt-4 dm-btn-outline-blue-1">
+                                            Visitar Site
                                             <i class="bi bi-chevron-right ms-2"></i>
                                         </a>
                                     </figcaption>
@@ -583,30 +631,108 @@
                 </div>
                 <div class="modal-body p-5 dm-modal-body">
                     <div class="row">
-                        <div class="col-12 col-xl-9">
+                        <div class="col-12">
                             <figure class="figure">
-                                <img src="./img/projects/sunnyhouse/img-sh-1.jpg" alt="..."
+                                <img src="./img/projects/sunnyhouse/sunny-house-login.jpg"
+                                    alt="Sunny House dashboard"
                                     class="figure-img img-fluid rounded">
                             </figure>
                         </div>
-                        <div class="col-6 col-xl-3">
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
                             <figure class="figure">
-                                <img src="./img/projects/sunnyhouse/img-sh-2.jpg" alt="..."
-                                class="figure-img img-fluid rounded">
+                                <img src="./img/projects/sunnyhouse/sunny-house-dashboard.jpg"
+                                    alt="Sunny House dashboard"
+                                    class="figure-img img-fluid rounded">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <figure class="figure">
+                                <img src="./img/projects/sunnyhouse/sunny-house-engenharia.jpg"
+                                    alt="Sunny House dashboard"
+                                    class="figure-img img-fluid rounded">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <figure class="figure">
+                                <img src="./img/projects/sunnyhouse/sunny-house-tickets.jpg"
+                                    alt="Sunny House dashboard"
+                                    class="figure-img img-fluid rounded">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal SAIR -->
+    <div class="modal fade" id="dm-modal-sair"
+        tabindex="-1"
+        aria-labelledby="dm-modal-sair-label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header dm-modal-header">
+                    <h4 class="modal-title fw-bold dm-title-4"
+                        id="dm-modal-sunnyhouse-label">
+                        SAIR/UFPA
+                    </h4>
+                    <button type="button" class="btn-close btn-lg btn-close-modal"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-5 dm-modal-body">
+                   <div class="row">
+                        <div class="col-12 col-xl-9">
+                            <figure class="figure">
+                                <img src="./img/projects/sair/sair-desktop-1.jpg"
+                                    alt="SAIR desktop home"
+                                    class="figure-img img-fluid rounded">
+                            </figure>
+                        </div>
+                        <div class="col-12 col-xl-3">
+                            <figure class="figure">
+                                <img src="./img/projects/sair/sair-mobile-1.jpg"
+                                    alt="SAIR mobile home"
+                                    class="figure-img img-fluid rounded">
                             </figure>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-xl-9">
                             <figure class="figure">
-                                <img src="./img/projects/sunnyhouse/img-sh-3.jpg" alt="..."
-                                class="figure-img img-fluid rounded">
+                                <img src="./img/projects/sair/sair-desktop-2.jpg"
+                                    alt="SAIR desktop login"
+                                    class="figure-img img-fluid rounded">
                             </figure>
                         </div>
-                        <div class="col-6 col-xl-3">
+                        <div class="col-12 col-xl-3">
                             <figure class="figure">
-                                <img src="./img/projects/sunnyhouse/img-sh-4.jpg" alt="..."
-                                class="figure-img img-fluid rounded">
+                                <img src="./img/projects/sair/sair-mobile-2.jpg"
+                                    alt="SAIR mobile login"
+                                    class="figure-img img-fluid rounded">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-xl-9">
+                            <figure class="figure">
+                                <img src="./img/projects/sair/sair-desktop-3.jpg"
+                                    alt="SAIR desktop cadastro"
+                                    class="figure-img img-fluid rounded">
+                            </figure>
+                        </div>
+                        <div class="col-12 col-xl-3">
+                            <figure class="figure">
+                                <img src="./img/projects/sair/sair-mobile-3.jpg"
+                                    alt="SAIR mobile cadastro"
+                                    class="figure-img img-fluid rounded">
                             </figure>
                         </div>
                     </div>
@@ -625,7 +751,7 @@
                 <div class="modal-header dm-modal-header">
                     <h4 class="modal-title fw-bold dm-title-4"
                         id="dm-modal-sisgee-label">
-                        SISGEE
+                        SISGEE/UFPA
                     </h4>
                     <button type="button" class="btn-close btn-lg btn-close-modal"
                         data-bs-dismiss="modal"
@@ -633,31 +759,50 @@
                 </div>
                 <div class="modal-body p-5 dm-modal-body">
                     <div class="row">
-                        <div class="col-12 col-xl-8">
+                        <div class="col-12 col-xl-9">
                             <figure class="figure">
-                                <img src="./img/projects/sisgee/img-sisgee-1.jpg" alt="..."
-
+                                <img src="./img/projects/sisgee/sisgee-desktop-home.jpg"
+                                    alt="SISGEE desktop home"
                                     class="figure-img img-fluid rounded">
                             </figure>
                         </div>
-                        <div class="col-6 col-xl-4">
+                        <div class="col-6 col-xl-3">
                             <figure class="figure">
-                                <img src="./img/projects/sisgee/img-sisgee-2.jpg" alt="..."
-                                class="figure-img img-fluid rounded">
+                                <img src="./img/projects/sisgee/sisgee-mobile-home.jpg"
+                                    alt="SISGEE mobile home"
+                                    class="figure-img img-fluid rounded">
                             </figure>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-xl-9">
                             <figure class="figure">
-                                <img src="./img/projects/sisgee/img-sisgee-3.jpg" alt="..."
-                                class="figure-img img-fluid rounded">
+                                <img src="./img/projects/sisgee/sisgee-desktop-sobre.jpg"
+                                    alt="SISGEE desktop sobre"
+                                    class="figure-img img-fluid rounded">
                             </figure>
                         </div>
                         <div class="col-6 col-xl-3">
                             <figure class="figure">
-                                <img src="./img/projects/sisgee/img-sisgee-4.jpg" alt="..."
-                                class="figure-img img-fluid rounded">
+                                <img src="./img/projects/sisgee/sisgee-mobile-sobre.jpg"
+                                    alt="SISGEE mobile sobre"
+                                    class="figure-img img-fluid rounded">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-xl-9">
+                            <figure class="figure">
+                                <img src="./img/projects/sisgee/sisgee-desktop-login.jpg"
+                                    alt="SISGEE desktop login"
+                                    class="figure-img img-fluid rounded">
+                            </figure>
+                        </div>
+                        <div class="col-6 col-xl-3">
+                            <figure class="figure">
+                                <img src="./img/projects/sisgee/sisgee-mobile-login.jpg"
+                                    alt="SISGEE mobile login"
+                                    class="figure-img img-fluid rounded">
                             </figure>
                         </div>
                     </div>
